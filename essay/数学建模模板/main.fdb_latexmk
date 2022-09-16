@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex main"] 1663292062 "main.aux" "main.bbl" "main" 1663292392
+["bibtex main"] 1663298739 "main.aux" "main.bbl" "main" 1663298752
   "c:/texlive/2021/texmf-dist/bibtex/bst/base/unsrt.bst" 1623425208 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "main.aux" 1663292390 2791 54e5214833a62e16bb3819d335d2806c "pdflatex"
+  "main.aux" 1663298749 2791 54e5214833a62e16bb3819d335d2806c "pdflatex"
   "reference.bib" 1663256507 660 b47c96f34d2d28e473ba529db104801d ""
   (generated)
   "main.blg"
   "main.bbl"
-["pdflatex"] 1663292388 "c:/Users/19459/2022MCM/2022MCM/essay/数学建模模板/main.tex" "main.pdf" "main" 1663292392
-  "c:/Users/19459/2022MCM/2022MCM/essay/数学建模模板/main.tex" 1663292387 14422 fceb9617e62df3c883f341be5a994349 ""
+["pdflatex"] 1663298747 "c:/Users/19459/2022MCM/2022MCM/essay/数学建模模板/main.tex" "main.pdf" "main" 1663298752
+  "c:/Users/19459/2022MCM/2022MCM/essay/数学建模模板/main.tex" 1663298747 14432 93b572fb83f2625c2e185ce2441d8d36 ""
   "c:/Windows/Fonts/msyh.ttc" 1622894706 19647736 ff2e53a6131130a07589812ea5b5b0d0 ""
   "c:/Windows/Fonts/simhei.ttf" 1622557740 9753388 6abc0fcfbaa40600f9cecca3afeb3aa7 ""
   "c:/Windows/Fonts/simkai.ttf" 1622557740 11787328 76179557c160634a761c845ea111c893 ""
@@ -304,8 +304,8 @@
   "c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1623456329 5227234 8169b85b11be64e0073b5aa9f9ec0c16 ""
   "c:/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1623456396 2811063 3b17b13ec822c63042acf633e76082e1 ""
   "c:/texlive/2021/texmf.cnf" 1623456307 713 e69b156964470283e0530f5060668171 ""
-  "main.aux" 1663292390 2791 54e5214833a62e16bb3819d335d2806c "pdflatex"
-  "main.bbl" 1663292062 487 127ea1bdd2f66b6fcb1b9d0a8893d6d2 "bibtex main"
+  "main.aux" 1663298749 2791 54e5214833a62e16bb3819d335d2806c "pdflatex"
+  "main.bbl" 1663298740 487 127ea1bdd2f66b6fcb1b9d0a8893d6d2 "bibtex main"
   "my_paper.cls" 1663256507 823 19f72070c444d774df8079f77328d6dc ""
   "sketch1.png" 1663289521 237059 8bf5388cb04a2e63fe98cdf9c613b22b ""
   (generated)

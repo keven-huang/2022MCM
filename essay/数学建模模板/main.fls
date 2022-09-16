@@ -1024,12 +1024,12 @@ INPUT c:/texlive/2021/texmf-dist/fonts/vf/public/newtx/ntxsy.vf
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/newtx/txsys.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/vf/public/newtx/ntx-Regular-tlf-ot1.vf
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1r.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/vf/public/newtx/ntxsym.vf
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/txfonts/txsyb.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/txfonts/txsya.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/vf/public/newtx/ntxsy7.vf
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/newtx/txsys.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/newtx/txex-bar.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/vf/public/newtx/ntxsym.vf
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/txfonts/txsyb.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/txfonts/txsya.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei51.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei68.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei9a.tfm
