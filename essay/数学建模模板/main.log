@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2021.2.21)  16 SEP 2022 16:22
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2021.2.21)  16 SEP 2022 22:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -746,57 +746,83 @@ Package babel Info: \l@australian = using hyphenrules for ukenglish
 Package babel Info: \l@newzealand = using hyphenrules for ukenglish
 (babel)             (\language21) on input line 108.
 ))
-\c@theorem=\count308
-\c@corollary=\count309
+(d:/texlive/2020/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count308
+\float@exts=\toks35
+\float@box=\box55
+\@float@everytoks=\toks36
+\@floatcapt=\box56
+)
+(d:/texlive/2020/texmf-dist/tex/latex/algorithms/algorithm.sty
+Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+\@float@every@algorithm=\toks37
+\c@algorithm=\count309
+)
+(d:/texlive/2020/texmf-dist/tex/latex/algorithms/algorithmic.sty
+Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count310
+\c@ALC@line=\count311
+\c@ALC@rem=\count312
+\c@ALC@depth=\count313
+\ALC@tlm=\skip67
+\algorithmicindent=\skip68
+)
+\c@theorem=\count314
+\c@corollary=\count315
  (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 17.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 20.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
- 17.
- (d:/texlive/2020/texmf-dist/tex/latex/newtx/omlntxmi.fd
+ 20.
+
+(d:/texlive/2020/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 20.
 LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
-17.
+20.
 
 (d:/texlive/2020/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 20.
 LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
- 17.
+ 20.
 
 (d:/texlive/2020/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 20.
 LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input lin
-e 17.
+e 20.
 
 (d:/texlive/2020/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    ... okay on input line 20.
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 17.
+LaTeX Info: Redefining \selectfont on input line 20.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -832,8 +858,8 @@ LaTeX Info: Redefining \selectfont on input line 17.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@mv@tabular=\count310
-\c@mv@boldtabular=\count311
+\c@mv@tabular=\count316
+\c@mv@boldtabular=\count317
 
 Package fontspec Info: Could not resolve font "SimHei/BI" (it probably doesn't
 (fontspec)             exist).
@@ -861,67 +887,81 @@ Package fontspec Info: Font family 'SimHei(0)' created for font 'SimHei' with
 
 ]
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.53937pt on input line 57.
+(Font)              scaled to size 10.53937pt on input line 60.
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
 [2]
 LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input lin
-e 81.
+e 82.
  (d:/texlive/2020/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2015/01/17 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.53937pt on input line 81.
+(Font)              scaled to size 10.53937pt on input line 82.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.0pt on input line 81.
+(Font)              scaled to size 7.0pt on input line 82.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 5.0pt on input line 81.
+(Font)              scaled to size 5.0pt on input line 82.
 LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
-81.
+82.
 
 (d:/texlive/2020/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
-81.
+82.
 
 (d:/texlive/2020/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
-81.
+82.
 
 (d:/texlive/2020/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 ) [3]
+File: pic1.png Graphic file (type bmp)
+<pic1.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
+
+ []
+
+File: sketch2.png Graphic file (type bmp)
+<sketch2.png>
+[4]
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 9.03374pt on input line 148.
+ [5]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 10.53937pt on input line 116.
+(Font)              scaled to size 10.53937pt on input line 164.
 File: sketch1.png Graphic file (type bmp)
 <sketch1.png>
- [4] [5] (./main.bbl) [6]
+ [6] [7] (./main.bbl) [8]
 LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input lin
-e 238.
- (d:/texlive/2020/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
+e 286.
+
+(d:/texlive/2020/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.53937pt on input line 238.
- [7] (./main.aux) ) 
+(Font)              scaled to size 10.53937pt on input line 286.
+ [9] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 12728 strings out of 476939
- 264061 string characters out of 5826132
- 645084 words of memory out of 5000000
- 32472 multiletter control sequences out of 15000+600000
- 426532 words of font info for 77 fonts, out of 8000000 for 9000
+ 12961 strings out of 476939
+ 267207 string characters out of 5826132
+ 648922 words of memory out of 5000000
+ 32692 multiletter control sequences out of 15000+600000
+ 429345 words of font info for 79 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  101i,11n,104p,402b,336s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (7 pages).
+Output written on main.pdf (9 pages).

@@ -9,6 +9,9 @@
 \usepackage[T1]{fontenc}    
 \usepackage{newtxtext, newtxmath}  %两种使用Times New Roman 字体的方法
 \usepackage[english]{babel}
+\usepackage{float}
+\usepackage{algorithm}
+\usepackage{algorithmic}
 \newcommand{\R}{\mathbb{R}}
 \newtheorem{theorem}{Theorem}
 \newtheorem{corollary}{Corollary}[theorem]
@@ -71,9 +74,7 @@
 
 假设二：所有的无人机在同一高度飞行
 
-假设三：无人机的位置偏差在可接受的范围内。
-
-假设四：不考虑无人机在行进过程中产生的意外情况。
+假设三：不考虑无人机在行进过程中产生的意外情况。
 %----------- 四、符号说明 ----------
 \section{四、符号说明}
 %使用三线表格最好~
@@ -95,9 +96,10 @@
 注意：第一：不需要把所有变量都放到这个表里面，模型中用到的临时变量可以不放。第二：下文中首次出现这些变量时也要进行解释，不然会降低文章的可读性。
 
 %----------- 五、模型的建立与求解 ----------
-\section{五、模型的建立与求解}
 
-（注意：这个部分里面的标题可根据你的论文内容进行调整，我这里给的是一个通用的模版）
+\newpage
+
+\section{五、模型的建立与求解}
 
 \subsection{第一问：无人机定位系统的建立}
 \subsubsection{模型准备}
@@ -105,8 +107,54 @@
 
 由于在理想情况下，九架外机均匀分布在圆周上，且飞行高度相同，因此对于不同的信号机的位置关系，只需要考虑两架外机之间的相对位置作为情况划分。因此，不妨假设其中一架外机为FY01，则只需要考虑以下四种位置关系：
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{pic1.png}
+    \caption{信号机的位置情况} 
+\end{figure}
+
+由于太多的情况分类会导致模型的适用性有所下降，因此我们考虑不同的位置情况的通用描述量，即两架信号外机与FY00形成的夹角。引入这个夹角作为模型的考虑变量，我们就将四种情况成功地在一个模型当中表达了出来。\\
+
+2）接收机的位置关系
+
+当接收机处在不同的位置的时候，由于形成的三个夹角之间涉及到加减关系，因此它们携带的信息也有所不同。为了统一不同位置上携带的角度信息，我们将顺时针旋转形成的角度定义为正，逆时针定义为负。
+
+
+\subsubsection{模型建立}
+
+由于接收机在理想位置上与两架信号机的夹角是固定的，因此我们希望通过两个固定的夹角形成的圆弧来确定接收机的具体位置，通过引入信号机之间的夹角作为变量，我们考虑建立以下的基本数学模型：
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{sketch2}
+    \caption{无人机定位系统的几何模型} 
+\end{figure}
+
+以O为原点，OA为x轴建立直角坐标平面，其中A点的坐标为$(r,0)$,B为另一架信号外机，满足$\angle A O B = \theta$,B点的坐标为$(rcos\theta,rsin\theta)$。同时，假设$\angle B C D = \beta$,$ \angle A C O = \alpha$。
+
+由以上条件，得到AOC的圆周方程：
+$$x ^ { 2 } + y ^ { 2 } - r x + \frac { r } { \tan \alpha } y = 0$$
+同样，得到BOC的圆周方程：
+$$x ^ { 2 } + y ^ { 2 } + ( - r \cos \theta - \frac { r \sin \theta } { \tan \beta } ) x + ( \frac { r \cos \theta } { \tan \beta } - r \sin \theta ) y = 0$$
+利用两个圆弧的交点，我们得到C点的坐标公式：
+$$x _ { c } = \frac { r A ^ { 2 } - r A / \tan \alpha } { A ^ { 2 } + 1 } \quad y _ { c } = \frac { r A - r / \tan \alpha } { A ^ { 2 } + 1 }$$
+其中：
+$$A = \frac { \frac { \cos \theta } { \tan \beta } - \sin \theta - \frac { 1 } { \tan \alpha } } { \cos \theta + \frac { \sin \theta } { \tan \beta } - 1 }$$
 
 \subsubsection{模型求解}
+
+通过基本的数学模型，我们设计算法对不同情况的点进行求解。考虑到接收机所处的位置不同，无法确定输入的角度的正负号，我们遍历一遍四种正负号的二元角度组，得到四个坐标定位。利用内积计算得到这四个坐标分别对应的三个夹角，与输入值比较，我们得以最终确定正确的坐标定位。于是，我们
+
+\begin{algorithm}[t]
+\caption{\small 无人机定位算法}
+\textbf{Input:}接收的三个角度$\alpha,\beta,\gamma$,两架信息外机的相对角度$\theta$，可接受误差限$\delta$ .\\
+\textbf{Initialize:}$a^{(i)} = [\alpha,\alpha,-\alpha,-\alpha],b ^{(i)}= [\beta,-\beta,\beta,-\beta],O=(0,0),A=(1,0),B=(cos\theta,sin\theta),i=1$.\\
+\textbf{Output:}接收机的坐标 $(x,y)$(单位为百米）. \\
+\textbf{Step1}计算$$N = \frac { \frac { \cos \theta } { \tan b^{(i)} } - \sin \theta - \frac { 1 } { \tan a^{(i)} } } { \cos \theta + \frac { \sin \theta } { \tan b^{(i)} } - 1 }$$
+\textbf{Step2}计算$$x= \frac { r N ^ { 2 } - r N / \tan a^{(i)} } { N ^ { 2 } + 1 } \quad y = \frac { r N - r / \tan ^{a(i)} } { N ^ { 2 } + 1 }\quad temp=(x,y)$$
+\textbf{Step3}计算$$\alpha _ { t e m p } = \arccos ( \frac { ( temp  - A ) \cdot ( O - A ) } { | \operatorname temp - A | | O - A | } )$$ $$\beta _{ temp} = \arccos ( \frac { ( temp - B ) ( O - B ) } { | temp - B | | O - B | } )$$ $$\gamma_ { temp } = \arccos ( \frac { ( temp - A ) ( B - A ) } { |  temp - A | | B - A | } )$$
+\textbf{Step4}如果存在$|\alpha-\alpha_{temp}|\quad|\beta-\beta_{temp}|\quad|\gamma-\gamma_{temp}|$大于误差限$\delta$,则$i=i+1$,转至Step2,直到满足误差限。
+\end{algorithm}
 
 \subsection{第二问模型的建立与求解}
 
@@ -136,7 +184,7 @@
     (converge superlinearly under Euclidean norm to) $(1,\frac{-2\pi}3)$, $(1,\frac{2\pi}3)$.
 \end{theorem} 
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{sketch1}
     \caption{从 $A^{(i-1)}$ 构造 $B^{(i)}$ 的过程} 
