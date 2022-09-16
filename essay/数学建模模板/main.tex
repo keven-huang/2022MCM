@@ -5,8 +5,14 @@
 \usepackage[dvipsnames]{xcolor}%颜色宏包
 \usepackage{graphicx}%图片宏包
 \usepackage{amsmath}%公式宏包
+\usepackage{amsthm}
 \usepackage[T1]{fontenc}    
 \usepackage{newtxtext, newtxmath}  %两种使用Times New Roman 字体的方法
+\usepackage[english]{babel}
+\newcommand{\R}{\mathbb{R}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
 
 \begin{document}
 %----------- 中文摘要 ----------
@@ -108,27 +114,60 @@
 \subsection{问题二模型的建立与求解}
 
 \subsection{问题三模型的建立与求解}
-
-公式\eqref{速度公式}是我们使用的速度公式。
-
-\begin{equation}
-p_{n}=\rho^{n}p_{0},\quad n=1,2,\cdot\cdot,K
-\label{速度公式}
-\end{equation}
-%直接点击右上角“公式编辑器”，上传公式截图即可一键复制LaTeX代码
-
-\begin{equation}
-v_{in}\left( t \right) =\begin{cases}
- CA\sqrt{\frac{2\varDelta P}{\rho \left( t \right)}},A\text{处单项阀开启}\\
- 0,             A\text{处单项阀关闭}\\
-\end{cases}
-\end{equation}
+    注意到理想情况下FY01,FY04,FY07构成一个等边三角形，FY00是它的中心。第一步我们将固定FY00和FY01,
+    通过反复调整FY04和FY07，使得FY01,FY04,FY07构成以FY00为中心的等边三角形。下面的定理保证了这样
+    调整进行得很快。
+\begin{theorem}[等边三角形定理]
+\label{dbsjx} 
+    设 $O=(0,0)$, $C=(1,0)$,   
+    $A^{0}=(1+\Delta,-\frac{2\pi}3-\delta)\in \R^{\geq 0}\times S^1$. 用如下递归的方式构造点列
+    $\{B^{(i)}\}_{i\geq 1}$, $\{A^{(i)}\}_{i\geq 1}$: 
+    $B^{(i)}=(r_B^{(i)},\theta_B^{(i)})$, $\theta_{B}^{(i)}\in (\frac \pi 2,\pi)$ 是
+    第二象限中满足 $\angle CB^{(i)}O=\angle OB^{(i)}A^{(i-1)}=\frac\pi6$ 的点, 
+    $A^{(i)}=(r_A^{(i)},-\theta_A^{(i)})$, $\theta_{A}^{(i)}\in (\frac \pi 2,\pi)$ 是
+    第三象限中满足 $\angle CA^{(i)}O=\angle OA^{(i)}B^{(i)}=\frac\pi6$ 的点(接下来构造 $B^{(i+1)}$, $A^{(i+1)})$. 
+    则 
+    \begin{equation}
+    \begin{aligned}
+        r_A^{(i)}=1+o((|\Delta|+|\delta|)^{(i)}),\quad r_B^{(i)}=1+o((|\Delta|+|\delta|)^{(i-1)}),
+        \\
+        \theta_A^{(i)}=\frac{2\pi}{3}+o((|\Delta|+|\delta|)^{(i)}),\quad \theta_B^{(i)}=\frac{2\pi}{3}+o((|\Delta|+|\delta|)^{(i-1)}).
+    \end{aligned}
+    \label{1}
+    \end{equation}
+    故序列 $A^{(i)}$, $B^{(i)}$ 分别依2-范数超线性收敛到
+    (converge superlinearly under Euclidean norm to) $(1,\frac{-2\pi}3)$, $(1,\frac{2\pi}3)$.
+\end{theorem} 
 
 \begin{figure}[h]
-\centering
-\includegraphics[width=0.5\textwidth]{slagerlogo}
-\caption{更多模板和论文工具尽在Slager：slager.cn}
+    \centering
+    \includegraphics[width=0.5\textwidth]{sketch1}
+    \caption{从 $A^{(i-1)}$ 构造 $B^{(i)}$ 的过程} 
 \end{figure}
+
+\begin{proof}
+    不妨设 $r_A^{(i-1)}=1+\Delta_A^{(i-1)}$, $\theta_A^{(i-1)}=\frac{2\pi}{3}+\delta_A^{(i-1)}$. 根据几何关系，有 
+    $$
+    r_A^{i-1}\sin(\theta_B^{(i)}+\theta_A^{(i-1)}-\frac{7\pi}{6})=\sin(\frac{5\pi}{6}-\theta_{B}^{(i)})=\frac12 r_B^{(i)}.
+    $$
+    做 Taylor 展开，忽略一阶小就有
+    $$
+        \theta_{B}^{(i)}= \frac{2\pi}3-\frac{1}{2} \delta_A^{(i-1)}-\frac{\sqrt 3}6 \Delta_A^{(i-1)}+o(|\Delta_A^{(i-1)}|+|\delta_A^{(i-1)}|)
+        ,\quad r_{B}^{(i)} = 1 +\frac{\sqrt3}{2} \delta_A^{(i-1)}+\frac12 \Delta_A^{(i-1)}+o((|\Delta_A^{(i-1)}|+|\delta_A^{(i-1)}|).
+    $$
+    利用旋转对称性，可得
+    \begin{equation}
+    \begin{aligned}
+        \theta_{A}^{(i)}= \frac{2\pi}3-\frac{1}{2} (-\frac{1}{2} \delta_A^{(i-1)}-\frac{\sqrt 3}6 \Delta_A^{(i-1)})
+        -\frac{\sqrt 3}6 (\frac{\sqrt3}{2} \delta_A^{(i-1)}+\frac12 \Delta_A^{(i-1)}) +o(|\Delta_A^{(i-1)}|+|\delta_A^{(i-1)}|)
+        \\=o(|\Delta_A^{(i-1)}|+|\delta_A^{(i-1)}|).&
+    \end{aligned}
+    \label{2}
+    \end{equation}
+    同理 $r_{A}^{(i)}=o(|\Delta_A^{(i-1)}|+|\delta_A^{(i-1)}|).$ 利用数学归纳法可得结果. 
+\end{proof}
+
+
 
 %----------- 六、模型的分析与检验 ----------
 \section{六、模型的分析与检验}
