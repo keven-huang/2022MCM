@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex main"] 1663292062 "main.aux" "main.bbl" "main" 1663292144
+["bibtex main"] 1663292062 "main.aux" "main.bbl" "main" 1663292392
   "c:/texlive/2021/texmf-dist/bibtex/bst/base/unsrt.bst" 1623425208 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "main.aux" 1663292114 2791 54e5214833a62e16bb3819d335d2806c "pdflatex"
+  "main.aux" 1663292390 2791 54e5214833a62e16bb3819d335d2806c "pdflatex"
   "reference.bib" 1663256507 660 b47c96f34d2d28e473ba529db104801d ""
   (generated)
-  "main.bbl"
   "main.blg"
-["pdflatex"] 1663292112 "c:/Users/19459/2022MCM/2022MCM/essay/数学建模模板/main.tex" "main.pdf" "main" 1663292144
-  "c:/Users/19459/2022MCM/2022MCM/essay/数学建模模板/main.tex" 1663292143 14381 08c4b0a1cdec4614212cc465dde1626b ""
+  "main.bbl"
+["pdflatex"] 1663292388 "c:/Users/19459/2022MCM/2022MCM/essay/数学建模模板/main.tex" "main.pdf" "main" 1663292392
+  "c:/Users/19459/2022MCM/2022MCM/essay/数学建模模板/main.tex" 1663292387 14422 fceb9617e62df3c883f341be5a994349 ""
   "c:/Windows/Fonts/msyh.ttc" 1622894706 19647736 ff2e53a6131130a07589812ea5b5b0d0 ""
   "c:/Windows/Fonts/simhei.ttf" 1622557740 9753388 6abc0fcfbaa40600f9cecca3afeb3aa7 ""
   "c:/Windows/Fonts/simkai.ttf" 1622557740 11787328 76179557c160634a761c845ea111c893 ""
@@ -97,6 +97,7 @@
   "c:/texlive/2021/texmf-dist/fonts/tfm/zhmetrics/unikai/unikai70.tfm" 1623456289 1172 732974353ad9531ae8eea34dd9f5a5ce ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/zhmetrics/unikai/unikai75.tfm" 1623456289 1172 2f7a4b0c52102520d004395339c53006 ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/zhmetrics/unikai/unikai76.tfm" 1623456289 1172 59ccc09a32bc1065dcb7437925eb1275 ""
+  "c:/texlive/2021/texmf-dist/fonts/tfm/zhmetrics/unikai/unikai7a.tfm" 1623456289 1172 ca94f7a1b0ba9893add120d3d76e106f ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/zhmetrics/unikai/unikai7b.tfm" 1623456289 1172 24787e626a4658aa0badf81d8fb205c2 ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/zhmetrics/unikai/unikai7e.tfm" 1623456289 1172 5692b0458110a523cfd5fc2e35541b30 ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/zhmetrics/unikai/unikai83.tfm" 1623456289 1172 c3b20b7f398a9c7d766badb6015bd073 ""
@@ -104,6 +105,7 @@
   "c:/texlive/2021/texmf-dist/fonts/tfm/zhmetrics/unikai/unikai8c.tfm" 1623456289 1172 b96858acf2c20389c5af6287cf150d38 ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/zhmetrics/unikai/unikai8d.tfm" 1623456289 1172 e6018378825d1ef17d762352d6fd052e ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/zhmetrics/unikai/unikai90.tfm" 1623456289 1172 3315451bb38b8ba0d03dc4fadb3f7c67 ""
+  "c:/texlive/2021/texmf-dist/fonts/tfm/zhmetrics/unikai/unikai95.tfm" 1623456289 1172 0f9119c40cb09c75e3f98aaa285451ea ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/zhmetrics/unikai/unikai96.tfm" 1623456289 1172 958385df735d4cfe9fa1fcdf6bb8794a ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong20.tfm" 1623456290 1172 c443622f792d7e5350ad5382dd8aebb3 ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong30.tfm" 1623456290 1172 87d6ba1aff8b955258f6ef7a5d8e86e5 ""
@@ -302,11 +304,11 @@
   "c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1623456329 5227234 8169b85b11be64e0073b5aa9f9ec0c16 ""
   "c:/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1623456396 2811063 3b17b13ec822c63042acf633e76082e1 ""
   "c:/texlive/2021/texmf.cnf" 1623456307 713 e69b156964470283e0530f5060668171 ""
-  "main.aux" 1663292114 2791 54e5214833a62e16bb3819d335d2806c "pdflatex"
+  "main.aux" 1663292390 2791 54e5214833a62e16bb3819d335d2806c "pdflatex"
   "main.bbl" 1663292062 487 127ea1bdd2f66b6fcb1b9d0a8893d6d2 "bibtex main"
   "my_paper.cls" 1663256507 823 19f72070c444d774df8079f77328d6dc ""
   "sketch1.png" 1663289521 237059 8bf5388cb04a2e63fe98cdf9c613b22b ""
   (generated)
-  "main.aux"
-  "main.log"
   "main.pdf"
+  "main.log"
+  "main.aux"

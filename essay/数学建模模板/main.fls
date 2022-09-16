@@ -1006,11 +1006,13 @@ INPUT c:/texlive/2021/texmf-dist/fonts/tfm/zhmetrics/unikai/unikai96.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/zhmetrics/unikai/unikai6e.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/zhmetrics/unikai/unikai8d.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/zhmetrics/unikai/unikai63.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/zhmetrics/unikai/unikai7e.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/zhmetrics/unikai/unikai7a.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/zhmetrics/unikai/unikai95.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/zhmetrics/unikai/unikai83.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/zhmetrics/unikai/unikai60.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/zhmetrics/unikai/unikai5e.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/zhmetrics/unikai/unikai4f.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/zhmetrics/unikai/unikai83.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/zhmetrics/unikai/unikai7e.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/zhmetrics/unikai/unikai60.tfm
 INPUT ./sketch1.png
 INPUT sketch1.png
 INPUT ./sketch1.png
@@ -1067,6 +1069,8 @@ INPUT c:/Windows/Fonts/simsun.ttc
 INPUT c:/Windows/Fonts/simhei.ttf
 INPUT c:/Windows/Fonts/simsun.ttc
 INPUT c:/Windows/Fonts/simhei.ttf
+INPUT c:/Windows/Fonts/simkai.ttf
+INPUT c:/Windows/Fonts/simkai.ttf
 INPUT c:/Windows/Fonts/simkai.ttf
 INPUT c:/Windows/Fonts/simkai.ttf
 INPUT c:/Windows/Fonts/simkai.ttf
