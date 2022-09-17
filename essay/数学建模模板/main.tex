@@ -270,7 +270,69 @@ $$
 \subsection{问题二模型的建立与求解}
 
 \ref{dbsjx} 提供了一种调整位置的优秀方案，只要无人机队形中能找到一个接近等边三角形和它的中心的四架飞机，就可以很快地
-将他们调整到合适的位置，以便其他飞机参照。
+将他们调整到合适的位置，以便其他飞机参照。对于飞机队形的调整问题，我们仍延续上一问的思路。首先固定三架发信机 $A$, $O$, $B$, 接收机 $C$ 按照 $COB$ 
+都处于理想位置时计算得到的理想角度进行调整。由于我们仅考虑相对角度和距离，不妨设 $O$, $C$ 处于理想位置。
+考虑到 $B$ 可能都有偏差, 此时 $A$ 与理想位置之间也会有些许偏差。
+然后再用同样的方法调整 $A$ 的位置，此时 $BOC$ 作为发信机。如此重复下去相互调整 $B$, $A$ 位置。下面的定理保证了
+只要 $B$, $C$ 的初始位置接近理想位置，且四架飞机之间的位置关系满足一定条件，这样的调整方案是收敛的。此外，
+定理还给出了快速收敛时四架飞机位置需要满足的条件。定理可以自然地推出等边三角形定理。
+这个定理有一定的技术性，在此省略了部分计算过程，但是其证明思想与等边三角形定理一致。 
+\begin{theorem}[三角调整收敛定理]
+    设 $O=(0,0)$, $C=(1,0)$. 取 $A_0=(r_A, -\theta_A)$, $B_0 = (r_B,\theta_B)$ 为目标位置, 点 $O$ 位于
+    三角形 $A_0B_0C$ 的内部.
+    固定 $\angle OCB_0=\alpha_1$, $\angle OCA_0=\beta_1$, $\angle OB_0A_0=\alpha_2$, $\angle OB_0C=\beta_2$,
+    $\angle OA_0C=\alpha_3$, $\angle OA_0B_0=\beta_3$,  
+    用如下递归的方式构造点列 $\{B^{(i)}\}_{i\geq 1}$, $\{A^{(i)}\}_{i\geq 1}$: 先找到
+    $B^{(i)}=(r_B^{(i)},\theta_B^{(i)})$ 满足 $\angle A^{(i-1)}B^{(i)}O=\alpha_2, \angle CB^{(i)}O=\beta_2$, 再找到
+    $A^{(i)}=(r_A^{(i)},-\theta_A^{(i)})$, 满足 $\angle CA^{(i)}O=\alpha_3, \angle OA^{(i)}B^{(i)}=\beta_3$. 如此重复下去.
+    则 
+    $$
+        \theta_A^{(i)}-\theta_A = X(\theta_A^{(i-1)}-\theta_A) + Y(r_A^{(i-1)}-r_A) + o(|\theta_A^{(i-1)}-\theta_A|+|r_A^{(i-1)}-r_A|).
+    $$
+    和
+    $$
+        r_A^{(i)}-r_A = -\cot\alpha_2 (\theta_A^{(i)}-\theta_A )+o(|\theta_A^{(i-1)}-\theta_A|+|r_A^{(i-1)}-r_A|).
+    $$
+    其中, 
+    $$
+    X=\frac{\cot \beta_3(\cot \alpha_2-\cot \alpha_1)}
+    {(\cot \alpha_1+\cot \beta_3)(\cot \alpha_2+\cot \beta_1)},\quad
+    Y=\frac{(\cot \alpha_2-\cot \alpha_1)}
+    {(\cot \alpha_1+\cot \beta_3)(\cot \alpha_2+\cot \beta_1)}.
+    $$
+    特别地, 若 $|X|+|Y|\leq 1$ 则点列 $A^{(i)}$, $B^{(i)}$ 线性收敛(linearly convergent)到 $A_0$, $B_0$. 
+    该收敛是超线性 (superlinear) 的当且仅当 $\alpha_2=\alpha_1$.  
+\end{theorem}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{sketch4}
+    \caption{从 $A^{(i-1)}$ 构造 $B^{(i)}$ 的过程} 
+\end{figure}
+\begin{proof}
+    这个定理是等边三角形定理的推广. 根据几何关系, 有
+    $$
+        \frac{1}{\sin\beta_2}=\frac{r_B^{(i)}}{\sin(\alpha_1+\theta_B-\theta_B^{(i)})},\quad
+        \frac{r_A^{(i-1)}}{\sin\alpha_2} = \frac{r_B^{(i)}}{\sin(\beta_3-\theta_B+\theta_B^{(i)}-\theta_A+\theta_A^{(i-1)})}.
+    $$
+    做 Taylor 展开, 忽略高阶小, 有
+    $$
+        \theta_B^{(i)}-\theta_B = \frac{-\cot \alpha_2}{\cot\beta_3+\cot\alpha_1}(\theta_A^{(i-1)}-\theta_A)+
+        \frac{-1}{\cot\beta_3+\cot\alpha_1}(r_A^{(i-1)}-r_A)+o(|\theta_A^{(i-1)}-\theta_A|+|r_A^{(i-1)}-r_A|),
+    $$
+    且 
+    $$
+        r_B^{(i)}-r_B= -\cot\alpha_1(\theta_B^{(i)}-\theta_B)+ o(|\theta_A^{(i-1)}-\theta_A|+|r_A^{(i-1)}-r_A|).
+    $$
+    利用对称性再次操作, 就得到了
+    $$
+    \theta_A^{(i)}-\theta_A = X(\theta_A^{(i-1)}-\theta_A) + Y(r_A^{(i-1)}-r_A) + o(|\theta_A^{(i-1)}-\theta_A|+|r_A^{(i-1)}-r_A|).
+    $$
+    在等边三角形定理的情况中, $\alpha_1=\alpha_2=\frac\pi6$, 此时 $X=Y=0$, 
+    故有 $\theta_A^{(i)}-\theta_A=o(|\theta_A^{(i-1)}-\theta_A|+|r_A^{(i-1)}-r_A|)$ 是2范数意义下的超线性收敛(利用有限维空间范数等价性).
+\end{proof}
+    对于给定的飞机队形，我们首先找到满足定理条件的四架飞机，用定理给出的方式调整位置。进行足够多次迭代后，再利用调整好的飞机确定其他飞机的位置。
+    下面笔者给出一些满足 $\alpha_1=\alpha_2$ 的图形。可以发现，在一般的规则队形中，这样的图形是常见的，例如题目中给出的锥形编队。
+    如果找不到这样的图形，我们可以找到 $|X|+|Y|$ 最小即收敛速度最快的调整方法。
 
 
 %----------- 六、模型的分析与检验 ----------
