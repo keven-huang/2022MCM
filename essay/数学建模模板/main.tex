@@ -159,13 +159,13 @@ $$
 
 \begin{algorithm}[t]
 \caption{\small 无人机定位算法}
-\textbf{Input:}接收的三个角度$\alpha,\beta,\gamma$,两架信息外机的相对角度$\theta$，可接受误差限$\delta$ .\\
-\textbf{Initialize:}$a^{(i)} = [\alpha,\alpha,-\alpha,-\alpha],b ^{(i)}= [\beta,-\beta,\beta,-\beta],O=(0,0),A=(1,0),B=(cos\theta,sin\theta),i=1$.\\
-\textbf{Output:}接收机的坐标 $(x,y)$(单位为百米）. \\
-\textbf{Step1}计算$$N = \frac { \frac { \cos \theta } { \tan b^{(i)} } - \sin \theta - \frac { 1 } { \tan a^{(i)} } } { \cos \theta + \frac { \sin \theta } { \tan b^{(i)} } - 1 }$$
-\textbf{Step2}计算$$x= \frac { r N ^ { 2 } - r N / \tan a^{(i)} } { N ^ { 2 } + 1 } \quad y = \frac { r N - r / \tan ^{a(i)} } { N ^ { 2 } + 1 }\quad temp=(x,y)$$
-\textbf{Step3}计算$$\alpha _ { t e m p } = \arccos ( \frac { ( temp  - A ) \cdot ( O - A ) } { | \operatorname temp - A | | O - A | } )$$ $$\beta _{ temp} = \arccos ( \frac { ( temp - B ) ( O - B ) } { | temp - B | | O - B | } )$$ $$\gamma_ { temp } = \arccos ( \frac { ( temp - A ) ( B - A ) } { |  temp - A | | B - A | } )$$
-\textbf{Step4}如果存在$|\alpha-\alpha_{temp}|\quad|\beta-\beta_{temp}|\quad|\gamma-\gamma_{temp}|$大于误差限$\delta$,则$i=i+1$,转至Step2,直到满足误差限。
+\textbf{Input:} 接收的三个角度 $\alpha,\beta,\gamma$,两架信息外机的相对角度 $\theta$，可接受误差限 $\delta$.\\
+\textbf{Initialize:} $a^{(i)} = [\alpha,\alpha,-\alpha,-\alpha],b ^{(i)}= [\beta,-\beta,\beta,-\beta],O=(0,0),A=(1,0),B=(cos\theta,sin\theta),i=1$.\\
+\textbf{Output:} 接收机的坐标 $(x,y)$ (单位为百米). \\
+\textbf{Step1} 计算 $$N = \frac { \frac { \cos \theta } { \tan b^{(i)} } - \sin \theta - \frac { 1 } { \tan a^{(i)} } } { \cos \theta + \frac { \sin \theta } { \tan b^{(i)} } - 1 }.$$
+\textbf{Step2} 计算 $$x= \frac { r N ^ { 2 } - r N / \tan a^{(i)} } { N ^ { 2 } + 1 } \quad y = \frac { r N - r / \tan ^{a(i)} } { N ^ { 2 } + 1 }\quad temp=(x,y).$$
+\textbf{Step3} 计算 $$\alpha _ { t e m p } = \arccos ( \frac { ( temp  - A ) \cdot ( O - A ) } { | \operatorname temp - A | | O - A | } )$$ $$\beta _{ temp} = \arccos ( \frac { ( temp - B ) ( O - B ) } { | temp - B | | O - B | } )$$ $$\gamma_ { temp } = \arccos ( \frac { ( temp - A ) ( B - A ) } { |  temp - A | | B - A | } ).$$
+\textbf{Step4} 如果存在 $|\alpha-\alpha_{temp}|\quad|\beta-\beta_{temp}|\quad|\gamma-\gamma_{temp}|$ 大于误差限 $\delta$, 则 $i=i+1$, 转至Step2, 直到满足误差限。
 \end{algorithm}
 
 \subsection{第二问模型的建立与求解}
@@ -223,6 +223,21 @@ $$
     \end{equation}
     同理 $r_{A}^{(i)}=o(|\Delta_A^{(i-1)}|+|\delta_A^{(i-1)}|).$ 利用数学归纳法可得结果. 
 \end{proof}
+
+    利用调整两个夹角为 $\frac\pi6$ 的方式，上面的定理保证了 FY04 和 FY07 能被快速地调整到理想位置。
+    接下来我们假定 FY04 和 FY07 的位置正确，通过第一小问的方法即可定位所有其他飞机并调整他们到理想位置。
+
+\begin{algorithm}[t]
+    \caption{\small 无人机位置调整算法}
+    \textbf{Input:} 预计无人机位置与理想位置的径向绝对误差 $\Delta$, 角向绝对误差 $\delta$, 可接受误差限 $\delta_0$.\\
+    \textbf{Output:}. \\
+    \textbf{Step1} 调整 FY04 的位置, 使得 FY07, FY04, FY00 的夹角与 FY01, FY04, FY07 的夹角均为 $\frac{\pi}{6}$.\\
+    \textbf{Step2} 调整 FY07 的位置, 使得 FY04, FY07, FY00 的夹角与 FY00, FY07, FY01 的夹角均为 $\frac{\pi}{6}$.\\
+    \textbf{Step3} 回到 Step1, 重复 $r$ 次. 其中 $(|\Delta|+|\delta|)^r\leq\delta_0$. \\
+    \textbf{Step4} 调整其他无人机到理想位置, 即对 $j\in\{2,3,5,6,8,9\}$, 计算 FY0j 在
+    理想位置相对于 FY07, FY00, FY01 的夹角，并调整 FY0j 使得它与 FY07, FY00, FY01 的夹角与
+    理想情况一致.\\
+\end{algorithm}
 
 \subsection{问题二模型的建立与求解}
 
