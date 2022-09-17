@@ -1,31 +1,31 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.16)  17 SEP 2022 15:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.6.12)  17 SEP 2022 16:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**d:/Codefield/Project/MCM/2022MCM/essay/数学建模模板/main.tex
-(d:/Codefield/Project/MCM/2022MCM/essay/数学建模模板/main.tex
-LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-02-24> (./my_paper.cls
+**c:/Users/19459/2022MCM/2022MCM/essay/数学建模模板/main.tex
+(c:/Users/19459/2022MCM/2022MCM/essay/数学建模模板/main.tex
+LaTeX2e <2021-06-01>
+L3 programming layer <2021-06-01> (./my_paper.cls
 Document Class: my_paper 2021/08/17 My custom CV class
-(e:/Program/texlive/2022/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(e:/Program/texlive/2022/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+(c:/texlive/2021/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/02/12 v1.4n Standard LaTeX document class
+(c:/texlive/2021/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2021/02/12 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count185
-\c@section=\count186
-\c@subsection=\count187
-\c@subsubsection=\count188
-\c@paragraph=\count189
-\c@subparagraph=\count190
-\c@figure=\count191
-\c@table=\count192
+\c@part=\count182
+\c@section=\count183
+\c@subsection=\count184
+\c@subsubsection=\count185
+\c@paragraph=\count186
+\c@subparagraph=\count187
+\c@figure=\count188
+\c@table=\count189
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
-) (e:/Program/texlive/2022/texmf-dist/tex/latex/titlesec/titlesec.sty
-Package: titlesec 2021/07/05 v2.14 Sectioning titles
+) (c:/texlive/2021/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \ttl@box=\box50
 \beforetitleunit=\skip49
 \aftertitleunit=\skip50
@@ -35,57 +35,59 @@ Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \titlewidth=\dimen141
 \titlewidthlast=\dimen142
 \titlewidthfirst=\dimen143
-)) (e:/Program/texlive/2022/texmf-dist/tex/latex/ctex/ctex.sty (e:/Program/texlive/2022/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2022-02-24 L3 programming layer (loader) 
- (e:/Program/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count193
+)) (c:/texlive/2021/texmf-dist/tex/latex/ctex/ctex.sty (c:/texlive/2021/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2021-06-01 L3 programming layer (loader) 
+ (c:/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-05-07 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count190
 \l__pdf_internal_box=\box51
 ))
-Package: ctex 2021/12/12 v2.5.8 Chinese adapter in LaTeX (CTEX)
- (e:/Program/texlive/2022/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2022-01-12 L3 Experimental document command parser
-) (e:/Program/texlive/2022/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
-) (e:/Program/texlive/2022/texmf-dist/tex/latex/ctex/ctexhook.sty
-Package: ctexhook 2021/12/12 v2.5.8 Document and package hooks (CTEX)
-) (e:/Program/texlive/2022/texmf-dist/tex/latex/ctex/ctexpatch.sty
-Package: ctexpatch 2021/12/12 v2.5.8 Patching commands (CTEX)
-) (e:/Program/texlive/2022/texmf-dist/tex/latex/base/fix-cm.sty
+Package: ctex 2021/03/14 v2.5.6 Chinese adapter in LaTeX (CTEX)
+ (c:/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2021-06-01 L3 Experimental document command parser
+) (c:/texlive/2021/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2021-06-01 LaTeX2e option processing using LaTeX3 keys
+) (c:/texlive/2021/texmf-dist/tex/latex/ctex/ctexhook.sty
+Package: ctexhook 2021/03/14 v2.5.6 Document and package hooks (CTEX)
+) (c:/texlive/2021/texmf-dist/tex/latex/ctex/ctexpatch.sty
+Package: ctexpatch 2021/03/14 v2.5.6 Patching commands (CTEX)
+) (c:/texlive/2021/texmf-dist/tex/latex/base/fix-cm.sty
 Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
- (e:/Program/texlive/2022/texmf-dist/tex/latex/base/ts1enc.def
+ (c:/texlive/2021/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
-))
-\l__ctex_tmp_int=\count194
+)) (c:/texlive/2021/texmf-dist/tex/latex/everysel/everysel.sty
+Package: everysel 2021/01/20 v2.1 EverySelectfont Package (MS)
+)
+\l__ctex_tmp_int=\count191
 \l__ctex_tmp_box=\box52
 \l__ctex_tmp_dim=\dimen144
-\g__ctex_section_depth_int=\count195
-\g__ctex_font_size_int=\count196
- (e:/Program/texlive/2022/texmf-dist/tex/latex/ctex/config/ctexopts.cfg
-File: ctexopts.cfg 2021/12/12 v2.5.8 Option configuration file (CTEX)
+\g__ctex_section_depth_int=\count192
+\g__ctex_font_size_int=\count193
+ (c:/texlive/2021/texmf-dist/tex/latex/ctex/config/ctexopts.cfg
+File: ctexopts.cfg 2021/03/14 v2.5.6 Option configuration file (CTEX)
 )
 
 Package ctex Warning: UTF8 will be used as the default encoding.
 
-(e:/Program/texlive/2022/texmf-dist/tex/latex/ctex/engine/ctex-engine-pdftex.def
-File: ctex-engine-pdftex.def 2021/12/12 v2.5.8 (pdf)LaTeX adapter (CTEX)
- (e:/Program/texlive/2022/texmf-dist/tex/latex/cjk/texinput/CJKutf8.sty
-Package: CJKutf8 2021/10/16 4.8.5
- (e:/Program/texlive/2022/texmf-dist/tex/generic/iftex/ifpdf.sty
+(c:/texlive/2021/texmf-dist/tex/latex/ctex/engine/ctex-engine-pdftex.def
+File: ctex-engine-pdftex.def 2021/03/14 v2.5.6 (pdf)LaTeX adapter (CTEX)
+ (c:/texlive/2021/texmf-dist/tex/latex/cjk/texinput/CJKutf8.sty
+Package: CJKutf8 2015/04/18 4.8.4
+ (c:/texlive/2021/texmf-dist/tex/generic/iftex/ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
- (e:/Program/texlive/2022/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
-)) (e:/Program/texlive/2022/texmf-dist/tex/latex/base/inputenc.sty
+ (c:/texlive/2021/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+)) (c:/texlive/2021/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
-) (e:/Program/texlive/2022/texmf-dist/tex/latex/cjk/texinput/CJK.sty
-Package: CJK 2021/10/16 4.8.5
- (e:/Program/texlive/2022/texmf-dist/tex/latex/cjk/texinput/mule/MULEenc.sty
-Package: MULEenc 2021/10/16 4.8.5
-) (e:/Program/texlive/2022/texmf-dist/tex/latex/cjk/texinput/CJK.enc
-File: CJK.enc 2021/10/16 4.8.5
+) (c:/texlive/2021/texmf-dist/tex/latex/cjk/texinput/CJK.sty
+Package: CJK 2015/04/18 4.8.4
+ (c:/texlive/2021/texmf-dist/tex/latex/cjk/texinput/mule/MULEenc.sty
+Package: MULEenc 2015/04/18 4.8.4
+) (c:/texlive/2021/texmf-dist/tex/latex/cjk/texinput/CJK.enc
+File: CJK.enc 2015/04/18 4.8.4
 Now handling font encoding C00 ...
 ... no UTF-8 mapping file for font encoding C00
 Now handling font encoding C05 ...
@@ -151,61 +153,62 @@ Now handling font encoding C41 ...
 Now handling font encoding C62 ...
 ... no UTF-8 mapping file for font encoding C62
 )
+LaTeX Info: Redefining \selectfont on input line 755.
 \CJK@indent=\box53
-) (e:/Program/texlive/2022/texmf-dist/tex/latex/base/fontenc.sty
+) (c:/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-)) (e:/Program/texlive/2022/texmf-dist/tex/latex/cjkpunct/CJKpunct.sty
+)) (c:/texlive/2021/texmf-dist/tex/latex/cjkpunct/CJKpunct.sty
 Package: CJKpunct 2016/05/14 4.8.4
-\CJKpunct@cnta=\count197
-\CJKpunct@cntb=\count198
-\CJKpunct@cntc=\count199
-\CJKpunct@cntd=\count266
-\CJKpunct@cnte=\count267
+\CJKpunct@cnta=\count194
+\CJKpunct@cntb=\count195
+\CJKpunct@cntc=\count196
+\CJKpunct@cntd=\count197
+\CJKpunct@cnte=\count198
    defining Unicode char U+2018 (decimal 8216)
    defining Unicode char U+2019 (decimal 8217)
    defining Unicode char U+201C (decimal 8220)
    defining Unicode char U+201D (decimal 8221)
    defining Unicode char U+2014 (decimal 8212)
    defining Unicode char U+2026 (decimal 8230)
- (e:/Program/texlive/2022/texmf-dist/tex/latex/cjkpunct/CJKpunct.spa)) (e:/Program/texlive/2022/texmf-dist/tex/latex/cjk/texinput/CJKspace.sty
-Package: CJKspace 2021/10/16 3.8.0
-) (e:/Program/texlive/2022/texmf-dist/tex/latex/ctex/ctexspa.def
-File: ctexspa.def 2021/12/12 v2.5.8 Space info for CJKpunct (CTEX)
+ (c:/texlive/2021/texmf-dist/tex/latex/cjkpunct/CJKpunct.spa)) (c:/texlive/2021/texmf-dist/tex/latex/cjk/texinput/CJKspace.sty
+Package: CJKspace 2015/04/18 3.8.0
+) (c:/texlive/2021/texmf-dist/tex/latex/ctex/ctexspa.def
+File: ctexspa.def 2021/03/14 v2.5.6 Space info for CJKpunct (CTEX)
 )
 \ccwd=\dimen145
 \l__ctex_ccglue_skip=\skip51
 )
 \l__ctex_ziju_dim=\dimen146
- (e:/Program/texlive/2022/texmf-dist/tex/latex/zhnumber/zhnumber.sty
+ (c:/texlive/2021/texmf-dist/tex/latex/zhnumber/zhnumber.sty
 Package: zhnumber 2020/05/01 v2.8 Typesetting numbers with Chinese glyphs
-\l__zhnum_scale_int=\count268
-\l__zhnum_byte_min_int=\count269
-\l__zhnum_byte_max_int=\count270
- (e:/Program/texlive/2022/texmf-dist/tex/latex/zhnumber/zhnumber-utf8.cfg
+\l__zhnum_scale_int=\count199
+\l__zhnum_byte_min_int=\count266
+\l__zhnum_byte_max_int=\count267
+ (c:/texlive/2021/texmf-dist/tex/latex/zhnumber/zhnumber-utf8.cfg
 File: zhnumber-utf8.cfg 2020/05/01 v2.8 Chinese numerals with UTF8 encoding
-)) (e:/Program/texlive/2022/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chinese.def
-File: ctex-scheme-chinese.def 2021/12/12 v2.5.8 Chinese scheme for generic (CTEX)
- (e:/Program/texlive/2022/texmf-dist/tex/latex/ctex/config/ctex-name-utf8.cfg
-File: ctex-name-utf8.cfg 2021/12/12 v2.5.8 Caption with encoding UTF-8 (CTEX)
-)) (e:/Program/texlive/2022/texmf-dist/tex/latex/tools/indentfirst.sty
+)) (c:/texlive/2021/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chinese.def
+File: ctex-scheme-chinese.def 2021/03/14 v2.5.6 Chinese scheme for generic (CTEX)
+ (c:/texlive/2021/texmf-dist/tex/latex/ctex/config/ctex-name-utf8.cfg
+File: ctex-name-utf8.cfg 2021/03/14 v2.5.6 Caption with encoding UTF-8 (CTEX)
+)) (c:/texlive/2021/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
-) (e:/Program/texlive/2022/texmf-dist/tex/latex/ctex/ctex-c5size.clo
-File: ctex-c5size.clo 2021/12/12 v2.5.8 c5size option (CTEX)
-) (e:/Program/texlive/2022/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-windows.def
-File: ctex-fontset-windows.def 2021/12/12 v2.5.8 Windows fonts definition (CTEX)
-)) (e:/Program/texlive/2022/texmf-dist/tex/latex/ctex/config/ctex.cfg
-File: ctex.cfg 2021/12/12 v2.5.8 Configuration file (CTEX)
-) (e:/Program/texlive/2022/texmf-dist/tex/latex/geometry/geometry.sty
+) (c:/texlive/2021/texmf-dist/tex/latex/ctex/ctex-c5size.clo
+File: ctex-c5size.clo 2021/03/14 v2.5.6 c5size option (CTEX)
+) (c:/texlive/2021/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-windows.def
+File: ctex-fontset-windows.def 2021/03/14 v2.5.6 Windows fonts definition (CTEX)
+)) (c:/texlive/2021/texmf-dist/tex/latex/ctex/config/ctex.cfg
+File: ctex.cfg 2021/03/14 v2.5.6 Configuration file (CTEX)
+) (c:/texlive/2021/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (e:/Program/texlive/2022/texmf-dist/tex/latex/graphics/keyval.sty
+ (c:/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks19
-) (e:/Program/texlive/2022/texmf-dist/tex/generic/iftex/ifvtex.sty
+) (c:/texlive/2021/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count271
-\Gm@cntv=\count272
-\c@Gm@tempcnt=\count273
+\Gm@cnth=\count268
+\Gm@cntv=\count269
+\c@Gm@tempcnt=\count270
 \Gm@bindingoffset=\dimen147
 \Gm@wd@mp=\dimen148
 \Gm@odd@mp=\dimen149
@@ -215,8 +218,8 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layouthoffset=\dimen153
 \Gm@layoutvoffset=\dimen154
 \Gm@dimlist=\toks20
-) (e:/Program/texlive/2022/texmf-dist/tex/latex/tools/array.sty
-Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
+) (c:/texlive/2021/texmf-dist/tex/latex/tools/array.sty
+Package: array 2021/04/20 v2.5e Tabular extension package (FMi)
 \col@sep=\dimen155
 \ar@mcellbox=\box54
 \extrarowheight=\dimen156
@@ -224,63 +227,63 @@ Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
 \extratabsurround=\skip52
 \backup@length=\skip53
 \ar@cellbox=\box55
-) (e:/Program/texlive/2022/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
- (e:/Program/texlive/2022/texmf-dist/tex/latex/graphics-cfg/color.cfg
+) (c:/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ (c:/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 227.
- (e:/Program/texlive/2022/texmf-dist/tex/latex/graphics-def/pdftex.def
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+ (c:/texlive/2021/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 )
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
-Package xcolor Info: Model `RGB' extended on input line 1368.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
- (e:/Program/texlive/2022/texmf-dist/tex/latex/graphics/dvipsnam.def
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+ (c:/texlive/2021/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
-)) (e:/Program/texlive/2022/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (e:/Program/texlive/2022/texmf-dist/tex/latex/graphics/graphics.sty
+)) (c:/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/12/05 v1.2c Enhanced LaTeX Graphics (DPC,SPQR)
+ (c:/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
- (e:/Program/texlive/2022/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-) (e:/Program/texlive/2022/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+ (c:/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (c:/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
 )
 \Gin@req@height=\dimen157
 \Gin@req@width=\dimen158
-) (e:/Program/texlive/2022/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2021/10/15 v2.17l AMS math features
+) (c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2021/04/20 v2.17j AMS math features
 \@mathmargin=\skip54
 
 For additional information on amsmath, use the `?' option.
-(e:/Program/texlive/2022/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2021/08/26 v2.01 AMS text
- (e:/Program/texlive/2022/texmf-dist/tex/latex/amsmath/amsgen.sty
+(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks22
 \ex@=\dimen159
-)) (e:/Program/texlive/2022/texmf-dist/tex/latex/amsmath/amsbsy.sty
+)) (c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen160
-) (e:/Program/texlive/2022/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2021/08/26 v2.02 operator names
+) (c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count274
+\inf@bad=\count271
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count275
-\leftroot@=\count276
+\uproot@=\count272
+\leftroot@=\count273
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count277
-\DOTSCASE@=\count278
+\classnum@=\count274
+\DOTSCASE@=\count275
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -289,15 +292,15 @@ LaTeX Info: Redefining \cdots on input line 620.
 \big@size=\dimen161
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count279
-\c@MaxMatrixCols=\count280
+\macc@depth=\count276
+\c@MaxMatrixCols=\count277
 \dotsspace@=\muskip16
-\c@parentequation=\count281
-\dspbrk@lvl=\count282
+\c@parentequation=\count278
+\dspbrk@lvl=\count279
 \tag@help=\toks23
-\row@=\count283
-\column@=\count284
-\maxfields@=\count285
+\row@=\count280
+\column@=\count281
+\maxfields@=\count282
 \andhelp@=\toks24
 \eqnshift@=\dimen162
 \alignsep@=\dimen163
@@ -309,9 +312,9 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \multlinegap=\skip55
 \multlinetaggap=\skip56
 \mathdisplay@stack=\toks26
-LaTeX Info: Redefining \[ on input line 2938.
-LaTeX Info: Redefining \] on input line 2939.
-) (e:/Program/texlive/2022/texmf-dist/tex/latex/amscls/amsthm.sty
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+) (c:/texlive/2021/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
 \thm@style=\toks27
 \thm@bodyfont=\toks28
@@ -322,41 +325,11 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@postskip=\skip58
 \thm@headsep=\skip59
 \dth@everypar=\toks32
-) (e:/Program/texlive/2022/texmf-dist/tex/latex/base/fontenc.sty
+) (c:/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-) (e:/Program/texlive/2022/texmf-dist/tex/latex/newtx/newtxtext.sty
-Package: newtxtext 2022/02/28 v1.71(Michael Sharpe) latex and unicode latex support for TeXGyreTermesX
- `newtxtext' v1.71, 2022/02/28 Text macros taking advantage of TeXGyre Termes and its extensions (msharpe) (e:/Program/texlive/2022/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
- (e:/Program/texlive/2022/texmf-dist/tex/generic/xkeyval/xkeyval.tex (e:/Program/texlive/2022/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks33
-\XKV@tempa@toks=\toks34
-)
-\XKV@depth=\count286
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-)) (e:/Program/texlive/2022/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count287
-) (e:/Program/texlive/2022/texmf-dist/tex/latex/base/textcomp.sty
-Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
-) (e:/Program/texlive/2022/texmf-dist/tex/generic/xstring/xstring.sty (e:/Program/texlive/2022/texmf-dist/tex/generic/xstring/xstring.tex
-\integerpart=\count288
-\decimalpart=\count289
-)
-Package: xstring 2021/07/21 v1.84 String manipulations (CT)
-) (e:/Program/texlive/2022/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
-) (e:/Program/texlive/2022/texmf-dist/tex/latex/carlisle/scalefnt.sty)
-LaTeX Font Info:    Setting ntxLF sub-encoding to TS1/0 on input line 21.
-LaTeX Font Info:    Setting ntxTLF sub-encoding to TS1/0 on input line 21.
-LaTeX Font Info:    Setting ntxOsF sub-encoding to TS1/0 on input line 21.
-LaTeX Font Info:    Setting ntxTOsF sub-encoding to TS1/0 on input line 21.
- (e:/Program/texlive/2022/texmf-dist/tex/generic/kastrup/binhex.tex)
-\ntx@tmpcnta=\count290
-\ntx@cnt=\count291
-
-ntx@otftextfalse
-(e:/Program/texlive/2022/texmf-dist/tex/latex/fontaxes/fontaxes.sty
+) (c:/texlive/2021/texmf-dist/tex/latex/newtx/newtxtext.sty
+Package: newtxtext 2021/05/24 v1.653
+ `newtxtext' v1.653, 2021/05/24 Text macros taking advantage of TeX-Gyre Termes fonts (msharpe) (c:/texlive/2021/texmf-dist/tex/latex/fontaxes/fontaxes.sty
 Package: fontaxes 2020/07/21 v1.0e Font selection axes
 LaTeX Info: Redefining \upshape on input line 29.
 LaTeX Info: Redefining \itshape on input line 31.
@@ -369,131 +342,164 @@ LaTeX Info: Redefining \textsw on input line 47.
 LaTeX Info: Redefining \textssc on input line 48.
 LaTeX Info: Redefining \textulc on input line 49.
 )
-LaTeX Info: Redefining \oldstylenums on input line 657.
-) (e:/Program/texlive/2022/texmf-dist/tex/latex/newtx/newtxmath.sty
-Package: newtxmath 2022/01/16 v1.71
- `newtxmath' v1.71, 2022/01/16 Math macros based originally on txfonts (msharpe) (e:/Program/texlive/2022/texmf-dist/tex/generic/iftex/ifxetex.sty
+\ntx@fs=\dimen168
+ (c:/texlive/2021/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+ (c:/texlive/2021/texmf-dist/tex/generic/xkeyval/xkeyval.tex (c:/texlive/2021/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks33
+\XKV@tempa@toks=\toks34
+)
+\XKV@depth=\count283
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (c:/texlive/2021/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count284
+) (c:/texlive/2021/texmf-dist/tex/generic/xstring/xstring.sty (c:/texlive/2021/texmf-dist/tex/generic/xstring/xstring.tex
+\integerpart=\count285
+\decimalpart=\count286
+)
+Package: xstring 2019/02/06 v1.83 String manipulations (CT)
+) (c:/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+) (c:/texlive/2021/texmf-dist/tex/latex/carlisle/scalefnt.sty) (c:/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+ntxtlf on input line 112.
+ (c:/texlive/2021/texmf-dist/tex/latex/newtx/t1ntxtlf.fd
+File: t1ntxtlf.fd 2021/05/24 v1.1 font definition file for T1/ntx/tlf
+)
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 10.53937pt on input line 112.
+) (c:/texlive/2021/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+LaTeX Font Info:    Changing ? sub-encoding to TS1/0 on input line 78.
+)
+\ntxt@cntz=\count287
+LaTeX Font Info:    Redeclaring math symbol \mathsterling on input line 320.
+) (c:/texlive/2021/texmf-dist/tex/latex/newtx/newtxmath.sty
+Package: newtxmath 2021/06/01 v1.655
+ `newtxmath' v1.655, 2021/06/01 Math macros based originally on txfonts (msharpe) (c:/texlive/2021/texmf-dist/tex/generic/iftex/ifxetex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
-) (e:/Program/texlive/2022/texmf-dist/tex/generic/iftex/ifluatex.sty
+) (c:/texlive/2021/texmf-dist/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
-) (e:/Program/texlive/2022/texmf-dist/tex/latex/oberdiek/centernot.sty
+) (c:/texlive/2021/texmf-dist/tex/latex/oberdiek/centernot.sty
 Package: centernot 2016/05/16 v1.4 Centers the not symbol horizontally (HO)
 )
-\tx@cntz=\count292
- (e:/Program/texlive/2022/texmf-dist/tex/generic/kastrup/binhex.tex)
-\tx@Isdigit=\count293
-\tx@IsAlNum=\count294
+\tx@cntz=\count288
+ (c:/texlive/2021/texmf-dist/tex/generic/kastrup/binhex.tex)
+\tx@Isdigit=\count289
+\tx@IsAlNum=\count290
 \tx@tA=\toks35
 \tx@tB=\toks36
 \tx@su=\read2
-
-amsthm NOT loaded
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 376.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 360.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/minntx/m/n on input line 376.
+(Font)                  OT1/cmr/m/n --> OT1/ntxtlf/m/n on input line 360.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/minntx/m/n on input line 376.
+(Font)                  OT1/cmr/bx/n --> OT1/ntxtlf/m/n on input line 360.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/minntx/m/n --> OT1/minntx/b/n on input line 377.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 383.
+(Font)                  OT1/ntxtlf/m/n --> OT1/ntxtlf/b/n on input line 361.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 369.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/qhv/m/n on input line 383.
+(Font)                  OT1/cmss/m/n --> T1/qhv/m/n on input line 369.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/qhv/m/n on input line 383.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 384.
+(Font)                  OT1/cmss/bx/n --> T1/qhv/m/n on input line 369.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 370.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/minntx/m/it on input line 384.
+(Font)                  OT1/cmr/m/it --> OT1/ntxtlf/m/it on input line 370.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/minntx/m/it on input line 384.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 385.
+(Font)                  OT1/cmr/bx/it --> OT1/ntxtlf/m/it on input line 370.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 371.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/ntxtt/m/n on input line 385.
+(Font)                  OT1/cmtt/m/n --> T1/ntxtt/m/n on input line 371.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/ntxtt/m/n on input line 385.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 387.
+(Font)                  OT1/cmtt/m/n --> T1/ntxtt/m/n on input line 371.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 373.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/minntx/b/n on input line 387.
+(Font)                  OT1/cmr/bx/n --> OT1/ntxtlf/b/n on input line 373.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/minntx/b/n on input line 387.
+(Font)                  OT1/cmr/bx/n --> OT1/ntxtlf/b/n on input line 373.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/minntx/m/it --> OT1/minntx/b/it on input line 388.
+(Font)                  OT1/ntxtlf/m/it --> OT1/ntxtlf/b/it on input line 374.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/qhv/m/n --> T1/qhv/b/n on input line 389.
+(Font)                  T1/qhv/m/n --> T1/qhv/b/n on input line 375.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/ntxtt/m/n --> T1/ntxtt/b/n on input line 390.
-LaTeX Font Info:    Redeclaring symbol font `letters' on input line 491.
+(Font)                  T1/ntxtt/m/n --> T1/ntxtt/b/n on input line 376.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 477.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
-(Font)                  OML/cmm/m/it --> OML/ntxmi/m/it on input line 491.
+(Font)                  OML/cmm/m/it --> OML/ntxmi/m/it on input line 477.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  OML/cmm/b/it --> OML/ntxmi/m/it on input line 491.
+(Font)                  OML/cmm/b/it --> OML/ntxmi/m/it on input line 477.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  OML/ntxmi/m/it --> OML/ntxmi/b/it on input line 492.
+(Font)                  OML/ntxmi/m/it --> OML/ntxmi/b/it on input line 478.
 \symlettersA=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `lettersA' in version `bold'
-(Font)                  U/ntxmia/m/it --> U/ntxmia/b/it on input line 547.
+(Font)                  U/ntxmia/m/it --> U/ntxmia/b/it on input line 533.
 Now handling font encoding LMS ...
 ... no UTF-8 mapping file for font encoding LMS
-LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 568.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 554.
 LaTeX Font Info:    Encoding `OMS' has changed to `LMS' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 568.
+(Font)              `symbols' in the math version `normal' on input line 554.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> LMS/ntxsy/m/n on input line 568.
+(Font)                  OMS/cmsy/m/n --> LMS/ntxsy/m/n on input line 554.
 LaTeX Font Info:    Encoding `OMS' has changed to `LMS' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 568.
+(Font)              `symbols' in the math version `bold' on input line 554.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> LMS/ntxsy/m/n on input line 568.
+(Font)                  OMS/cmsy/b/n --> LMS/ntxsy/m/n on input line 554.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  LMS/ntxsy/m/n --> LMS/ntxsy/b/n on input line 569.
+(Font)                  LMS/ntxsy/m/n --> LMS/ntxsy/b/n on input line 555.
 \symAMSm=\mathgroup5
 LaTeX Font Info:    Overwriting symbol font `AMSm' in version `bold'
-(Font)                  U/ntxsym/m/n --> U/ntxsym/b/n on input line 594.
+(Font)                  U/ntxsym/m/n --> U/ntxsym/b/n on input line 580.
 \symsymbolsC=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `symbolsC' in version `bold'
-(Font)                  U/ntxsyc/m/n --> U/ntxsyc/b/n on input line 615.
+(Font)                  U/ntxsyc/m/n --> U/ntxsyc/b/n on input line 601.
 Now handling font encoding LMX ...
 ... no UTF-8 mapping file for font encoding LMX
-LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 628.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 614.
 LaTeX Font Info:    Encoding `OMX' has changed to `LMX' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 628.
+(Font)              `largesymbols' in the math version `normal' on input line 614.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> LMX/ntxexx/m/n on input line 628.
+(Font)                  OMX/cmex/m/n --> LMX/ntxexx/m/n on input line 614.
 LaTeX Font Info:    Encoding `OMX' has changed to `LMX' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 628.
+(Font)              `largesymbols' in the math version `bold' on input line 614.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> LMX/ntxexx/m/n on input line 628.
+(Font)                  OMX/cmex/m/n --> LMX/ntxexx/m/n on input line 614.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  LMX/ntxexx/m/n --> LMX/ntxexx/b/n on input line 629.
+(Font)                  LMX/ntxexx/m/n --> LMX/ntxexx/b/n on input line 615.
 \symlargesymbolsTXA=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `largesymbolsTXA' in version `bold'
-(Font)                  U/ntxexa/m/n --> U/ntxexa/b/n on input line 643.
+(Font)                  U/ntxexa/m/n --> U/ntxexa/b/n on input line 629.
 \tx@sbptoks=\toks37
-LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 866.
-LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 867.
-LaTeX Font Info:    Redeclaring math delimiter \lceil on input line 868.
-LaTeX Font Info:    Redeclaring math delimiter \rceil on input line 869.
-LaTeX Font Info:    Redeclaring math delimiter \lbrace on input line 870.
-LaTeX Font Info:    Redeclaring math delimiter \rbrace on input line 871.
-LaTeX Font Info:    Redeclaring math delimiter \langle on input line 872.
-LaTeX Font Info:    Redeclaring math delimiter \rangle on input line 874.
-LaTeX Font Info:    Redeclaring math delimiter \arrowvert on input line 878.
-LaTeX Font Info:    Redeclaring math delimiter \vert on input line 879.
-LaTeX Font Info:    Redeclaring math symbol \hbar on input line 925.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 950.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 951.
-LaTeX Font Info:    Redeclaring math accent \vec on input line 2020.
-LaTeX Info: Redefining \Bbbk on input line 2810.
-LaTeX Info: Redefining \not on input line 2959.
-LaTeX Info: Redefining \textsquare on input line 2989.
-LaTeX Info: Redefining \openbox on input line 2991.
-) (e:/Program/texlive/2022/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2022/02/26 3.73 The Babel package
-\babel@savecnt=\count295
-\U@D=\dimen168
+LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 852.
+LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 853.
+LaTeX Font Info:    Redeclaring math delimiter \lceil on input line 854.
+LaTeX Font Info:    Redeclaring math delimiter \rceil on input line 855.
+LaTeX Font Info:    Redeclaring math delimiter \lbrace on input line 856.
+LaTeX Font Info:    Redeclaring math delimiter \rbrace on input line 857.
+LaTeX Font Info:    Redeclaring math delimiter \langle on input line 858.
+LaTeX Font Info:    Redeclaring math delimiter \rangle on input line 860.
+LaTeX Font Info:    Redeclaring math delimiter \arrowvert on input line 864.
+LaTeX Font Info:    Redeclaring math delimiter \vert on input line 865.
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 911.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 936.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 937.
+LaTeX Font Info:    Redeclaring math accent \vec on input line 2000.
+LaTeX Info: Redefining \Bbbk on input line 2788.
+LaTeX Info: Redefining \not on input line 2937.
+LaTeX Info: Redefining \textsquare on input line 2967.
+LaTeX Info: Redefining \openbox on input line 2969.
+) (c:/texlive/2021/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2021/06/02 3.60 The Babel package
+ (c:/texlive/2021/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2021/06/02 3.60 Babel common definitions
+\babel@savecnt=\count291
+\U@D=\dimen169
 \l@unhyphenated=\language87
- (e:/Program/texlive/2022/texmf-dist/tex/generic/babel/txtbabel.def)
+ (c:/texlive/2021/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read3
-\bbl@dirlevel=\count296
- (e:/Program/texlive/2022/texmf-dist/tex/generic/babel-english/english.ldf
+)
+\bbl@dirlevel=\count292
+ (c:/texlive/2021/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
@@ -501,47 +507,40 @@ Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
 (babel)             (\language21). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
 (babel)             (\language21). Reported on input line 108.
-)) (e:/Program/texlive/2022/texmf-dist/tex/latex/float/float.sty
+)) (c:/texlive/2021/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count297
+\c@float@type=\count293
 \float@exts=\toks38
 \float@box=\box58
 \@float@everytoks=\toks39
 \@floatcapt=\box59
-) (e:/Program/texlive/2022/texmf-dist/tex/latex/algorithms/algorithm.sty
+) (c:/texlive/2021/texmf-dist/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
 \@float@every@algorithm=\toks40
-\c@algorithm=\count298
-) (e:/Program/texlive/2022/texmf-dist/tex/latex/algorithms/algorithmic.sty
+\c@algorithm=\count294
+) (c:/texlive/2021/texmf-dist/tex/latex/algorithms/algorithmic.sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count299
-\c@ALC@line=\count300
-\c@ALC@rem=\count301
-\c@ALC@depth=\count302
+\c@ALC@unique=\count295
+\c@ALC@line=\count296
+\c@ALC@rem=\count297
+\c@ALC@depth=\count298
 \ALC@tlm=\skip60
 \algorithmicindent=\skip61
 )
-\c@theorem=\count303
-\c@corollary=\count304
- (e:/Program/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.bdg
-File: UTF8.bdg 2021/10/16 4.8.5
-) (e:/Program/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (e:/Program/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-)
-LaTeX Font Info:    Trying to load font information for T1+ntxtlf on input line 20.
- (e:/Program/texlive/2022/texmf-dist/tex/latex/newtx/t1ntxtlf.fd
-File: t1ntxtlf.fd 2021/05/24 v1.1 font definition file for T1/ntx/tlf
-)
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.53937pt on input line 20.
- (./main.aux)
+\c@theorem=\count299
+\c@corollary=\count300
+ (c:/texlive/2021/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.bdg
+File: UTF8.bdg 2015/04/18 4.8.4
+) (c:/texlive/2021/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2015/04/18 4.8.4
+) (c:/texlive/2021/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2015/04/18 4.8.4
+) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 20.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 20.
- (e:/Program/texlive/2022/texmf-dist/tex/latex/newtx/omlntxmi.fd
+ (c:/texlive/2021/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
 LaTeX Font Info:    ... okay on input line 20.
@@ -557,7 +556,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
 LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 20.
 LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 20.
- (e:/Program/texlive/2022/texmf-dist/tex/latex/newtx/untxexa.fd
+ (c:/texlive/2021/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
 LaTeX Font Info:    ... okay on input line 20.
@@ -627,16 +626,21 @@ LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
 LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 20.
 LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 20.
- (e:/Program/texlive/2022/texmf-dist/tex/latex/newtx/lmsntxsy.fd
+ (c:/texlive/2021/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
 LaTeX Font Info:    ... okay on input line 20.
 LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 20.
 LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 20.
- (e:/Program/texlive/2022/texmf-dist/tex/latex/newtx/lmxntxexx.fd
+ (c:/texlive/2021/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
 LaTeX Font Info:    ... okay on input line 20.
+
+
+Package everysel Warning: Everysel is no longer required.,
+(everysel)                The LaTeX kernel is now providing the same functionality itself.,
+(everysel)                See the package documentation or lthooks-doc for further information. .
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -672,39 +676,39 @@ LaTeX Font Info:    ... okay on input line 20.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(e:/Program/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(c:/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count305
-\scratchdimen=\dimen169
+\scratchcounter=\count301
+\scratchdimen=\dimen170
 \scratchbox=\box60
-\nofMPsegments=\count306
-\nofMParguments=\count307
+\nofMPsegments=\count302
+\nofMParguments=\count303
 \everyMPshowfont=\toks41
-\MPscratchCnt=\count308
-\MPscratchDim=\dimen170
-\MPnumerator=\count309
-\makeMPintoPDFobject=\count310
+\MPscratchCnt=\count304
+\MPscratchDim=\dimen171
+\MPnumerator=\count305
+\makeMPintoPDFobject=\count306
 \everyMPtoPDFconversion=\toks42
-) (e:/Program/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+) (c:/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (e:/Program/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+ (c:/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\c@mv@tabular=\count311
-\c@mv@boldtabular=\count312
+\c@mv@tabular=\count307
+\c@mv@boldtabular=\count308
 LaTeX Font Info:    Trying to load font information for C70+zhhei on input line 25.
- (e:/Program/texlive/2022/texmf-dist/tex/latex/zhmetrics/c70zhhei.fd
+ (c:/texlive/2021/texmf-dist/tex/latex/zhmetrics/c70zhhei.fd
 File: c70zhhei.fd 2009/09/23 4.8.2
 )
 LaTeX Font Info:    Trying to load font information for C70+rm on input line 31.
- (e:/Program/texlive/2022/texmf-dist/tex/latex/ctex/fd/c70rm.fd
-File: c70rm.fd 2021/12/12 v2.5.8 Chinese font definition (CTEX)
+ (c:/texlive/2021/texmf-dist/tex/latex/ctex/fd/c70rm.fd
+File: c70rm.fd 2021/03/14 v2.5.6 Chinese font definition (CTEX)
 )
 Package CJKpunct Info: use punctuation spaces for family 'rm' with punctstyle (quanjiao) on input line 31.
- (e:/Program/texlive/2022/texmf-dist/tex/generic/ctex/zhmap/ctex-zhmap-windows.tex
-File: ctex-zhmap-windows.tex 2021/12/12 v2.5.8 Windows font map loader for pdfTeX and DVIPDFMx (CTEX)
-{e:/Program/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{UGBK.sfd}{Unicode.sfd}) [1
+ (c:/texlive/2021/texmf-dist/tex/generic/ctex/zhmap/ctex-zhmap-windows.tex
+File: ctex-zhmap-windows.tex 2021/03/14 v2.5.6 Windows font map loader for pdfTeX and DVIPDFMx (CTEX)
+{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{UGBK.sfd}{Unicode.sfd}) [1
 
 ]
 Package CJKpunct Info: use punctuation spaces for family 'zhhei' with punctstyle (quanjiao) on input line 48.
@@ -732,20 +736,26 @@ Overfull \hbox (46.41788pt too wide) in paragraph at lines 65--66
  []
 
 [2]
-LaTeX Font Info:    Trying to load font information for OT1+minntx on input line 83.
- (e:/Program/texlive/2022/texmf-dist/tex/latex/newtx/ot1minntx.fd
-File: ot1minntx.fd 2022/01/20 v1.0 font definition file for OT1/minntx
+LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input line 83.
+ (c:/texlive/2021/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
+File: ot1ntxtlf.fd 2021/05/24 v1.0 font definition file for OT1/ntx/tlf
 )
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 10.53937pt on input line 83.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 7.0pt on input line 83.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 5.0pt on input line 83.
 LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 83.
- (e:/Program/texlive/2022/texmf-dist/tex/latex/newtx/untxmia.fd
+ (c:/texlive/2021/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 83.
- (e:/Program/texlive/2022/texmf-dist/tex/latex/newtx/untxsym.fd
+ (c:/texlive/2021/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 83.
- (e:/Program/texlive/2022/texmf-dist/tex/latex/newtx/untxsyc.fd
+ (c:/texlive/2021/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 ) [3]
 <pic1.png, id=176, 291.2309pt x 217.67036pt>
@@ -781,23 +791,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 252--260
  []
 
 [7 <./sketch1.png>] [8] (./main.bbl) [9]
-LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input line 334.
- (e:/Program/texlive/2022/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
+LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input line 336.
+ (c:/texlive/2021/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.53937pt on input line 334.
+(Font)              scaled to size 10.53937pt on input line 336.
  [10] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 14328 strings out of 478268
- 231089 string characters out of 5846353
- 513251 words of memory out of 5000000
- 31893 multiletter control sequences out of 15000+600000
- 553058 words of font info for 269 fonts, out of 8000000 for 9000
+ 13541 strings out of 478536
+ 203306 string characters out of 5854226
+ 516600 words of memory out of 5000000
+ 30838 multiletter control sequences out of 15000+600000
+ 485566 words of font info for 265 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,78p,941b,350s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{e:/Program/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}<c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf>{e:/Program/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}<c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc>{e:/Program/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}<c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><e:/Program/texlive/2022/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb><e:/Program/texlive/2022/texmf-dist/fonts/type1/public/newtx/NewTXMI5.pfb><e:/Program/texlive/2022/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb><e:/Program/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb><e:/Program/texlive/2022/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb><e:/Program/texlive/2022/texmf-dist/fonts/type1/public/txfonts/txsya.pfb><e:/Program/texlive/2022/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb><e:/Program/texlive/2022/texmf-dist/fonts/type1/public/newtx/txsys.pfb><e:/Program/texlive/2022/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><e:/Program/texlive/2022/texmf-dist/fonts/type1/public/newtx/ztmr.pfb><e:/Program/texlive/2022/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on main.pdf (10 pages, 962161 bytes).
+ 76i,11n,82p,1092b,320s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2021/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}<c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf>{c:/texlive/2021/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}<c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc>{c:/texlive/2021/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}<c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/texlive/2021/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/newtx/NewTXMI5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/txfonts/txsya.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/newtx/txsys.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/newtx/ztmr.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
+Output written on main.pdf (10 pages, 999738 bytes).
 PDF statistics:
  771 PDF objects out of 1000 (max. 8388607)
  504 compressed objects within 6 object streams
