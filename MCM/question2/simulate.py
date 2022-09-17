@@ -199,7 +199,6 @@ def runSimulation_re(kind):
     plt.figure()
     fig, axs = plt.subplots(2, 2 ,figsize=(12,12))
     
-
     for i in range(2, 6):
         for j in range(2, 10):
             if j != i:
