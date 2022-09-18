@@ -134,17 +134,19 @@ $$
 
 \subsubsection{模型建立}
 
-已知接收机与三架发射发信机形成的三个夹角, 接收机的位置可以被唯一确定。
+已知接收机与三架发射发信机形成的三个夹角, 接收机的位置可以被几乎唯一确定。
 \begin{theorem}[定位基本定理]
     设 $O,A,B\in\R^2$ 互不相同, $\alpha,\beta,\gamma\in[0,\pi]$, 则满足 $\angle OCA = \alpha$, $\angle OCB = \beta$, $\angle BCA = \gamma$ 的点 $C$ 
-    至多只有一个. 即若 $C$ 存在，则 $C$ 能被唯一确定. 
+    如果存在且不在过 $AOB$ 的圆上, 则 $C$ 能被唯一确定。
 \end{theorem}
 \begin{proof}
-    满足 $\angle OCA = \alpha$ 的点 $C$ 的轨迹是圆弧或者直线. 考虑满足 $\angle OCA = \alpha$, $\angle OCB = \beta$ 的点 $C$. 这两个不重合圆弧
+    满足 $\angle OCA = \alpha$ 的点 $C$ 的轨迹是圆弧或者直线. 考虑满足 $\angle OCA = \alpha$, $\angle OCB = \beta$ 的点 $C$. 
+    利用 $OABC$ 不共圆, 这两个不重合圆弧
     或圆弧与直线或两条直线之间最多有两个交点. 若交点存在, 必有一个是 $O$, 而 $O$ 符合条件仅当 $\alpha=\beta=k\pi$. 
     此时 $O$ 是两直线的唯一交点. 否则, 符合条件的 $C$ 只可能为剩下一个交点或不存在. 
 \end{proof}
 
+若接收机机在理想位置附近，则接收机与三架发信机一定不共圆。接收机的位置就能被唯一确定。
 通过引入发信机之间的夹角作为变量，我们考虑建立以下的基本数学模型：
 
 \begin{figure}[H]
