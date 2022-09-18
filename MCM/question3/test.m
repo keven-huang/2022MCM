@@ -4,7 +4,7 @@ rng(sum(100*clock))
 
 ErrorRate = 0.2; %误差20%
 err = 10^(-5);   %容许测定误差
-TestNum = 100;   %测试100个点
+TestNum = 100;     %测试100个点
 R = 1;           %基础半径定义为1
 Correct = 0;     %测试正确个数
 
@@ -34,7 +34,8 @@ for j = 2:5
             FlightNo = randi([1,8]);
         end
         theta = pi/4.5*FlightNo*(1+rand*ErrorRate);
-        
+        polarscatter(theta,r,20,'r','filled');
+        hold on
 
         %计算角度
         [FlightPointX,FlightPointY] = pol2cart(r,theta);
@@ -54,12 +55,7 @@ for j = 2:5
         %验证
         if abs(PlaceRes(1) - FlightPoint(1)) < err && ...
            abs(PlaceRes(2) - FlightPoint(2)) < err
-            polarscatter(theta,r,'r','filled');
-            hold on
             Correct = Correct + 1;
-        else
-            polarscatter(theta,r,'b','filled');
-            hold on
         end
     end
     hold off

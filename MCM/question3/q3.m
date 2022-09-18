@@ -6,6 +6,14 @@ polars(1,:) = polars(1,:)/100;
 polars(2,:) = polars(2,:)*pi/180;
 disp(polars);
 
+% polars 其他随机测试数据（误差率<=10%）需要注释上面所有内容
+%随机测试1
+% polars = [0    1.0000    1.0520    1.0803    1.0747    0.9679    0.9293    1.0633    1.0748    0.9030;
+%           0         0   0.6630    1.4207    1.9612    2.9508    3.6741    4.2114    5.0133    5.6777];
+% 随机测试2
+% polars = [0    1.0000    1.0103    1.0076    0.9244    1.0193    0.9639    1.0662    0.9601    1.0954;
+%           0         0    0.6901    1.2581    2.2600    2.9817    3.7909    4.5153    4.6635    5.7404]; 
+
 % 基础参数设定
 dim = 2;                % 极坐标参数个数
 flight_num = 10;        % 无人机数
@@ -66,7 +74,6 @@ for flight = 2 : 10
 %     distance=@(x,y)sqrt((x(2)-x(1))^2+(y(2)-y(1))^2);
 %     ToAngle = atan((ToPoint(2) - inity)/(ToPoint(1) - initx));
 %     direct = sprintf("flight %d should direct to %d",flight,ToAngle);
-    disp(direct);
 end
 
 % 绘图
