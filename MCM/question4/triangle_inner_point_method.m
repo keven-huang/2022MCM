@@ -1,0 +1,21 @@
+function res = triangle_inner_point_method(list, D1, d1)
+lenn = 10;
+a1 = list(1);
+b1 = list(2);
+a2 = list(3);
+b2 = list(4); 
+a3 = list(5);
+b3 = list(6);
+L1 = list(7);
+L2 = list(8);
+res = zeros(2,lenn);
+for j = 1:lenn
+    g1 = @(t) sin(a2)*sin(a1-t)-L1*(1+D1)*sin(b2)*sin(b3+t+d1);
+    d2 = fsolve(g1,0);
+    D2 = sin(a1-d2)/sin(b2)/L2-1;
+    g2 = @(t) sin(a2+t+d2)*sin(a3)*L2*(1+D2)-sin(b3)*sin(b1-t);
+    d1 = fsolve(g2,0);
+    D1 = sin(b1-d1)/sin(a3)/L1-1;
+    res(1,j) = d1;
+    res(2,j) = D1;
+end
