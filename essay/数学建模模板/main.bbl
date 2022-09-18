@@ -1,18 +1,29 @@
 \begin{thebibliography}{1}
 
-\bibitem{risken1996fokker}
-Hannes Risken.
-\newblock Fokker-planck equation.
-\newblock In {\em The Fokker-Planck Equation}, pages 63--95. Springer, 1996.
+\bibitem{baca2021mrs}
+Tomas Baca, Matej Petrlik, Matous Vrba, Vojtech Spurny, Robert Penicka, Daniel
+  Hert, and Martin Saska.
+\newblock The mrs uav system: Pushing the frontiers of reproducible research,
+  real-world deployment, and education with autonomous unmanned aerial
+  vehicles.
+\newblock {\em Journal of Intelligent \& Robotic Systems}, 102(1):1--28, 2021.
 
-\bibitem{rossler1979equation}
-OE5889510996 Rossler.
-\newblock An equation for hyperchaos.
-\newblock {\em Physics Letters A}, 71(2-3):155--157, 1979.
+\bibitem{santos2017indoor}
+Milton~CP Santos, Lucas~V Santana, Alexandre~S Brand{\~a}o, M{\'a}rio
+  Sarcinelli-Filho, and Ricardo Carelli.
+\newblock Indoor low-cost localization system for controlling aerial robots.
+\newblock {\em Control Engineering Practice}, 61:93--111, 2017.
 
-\bibitem{mckean1970nagumo}
-HP~McKean~Jr.
-\newblock Nagumo's equation.
-\newblock {\em Advances in mathematics}, 4(3):209--223, 1970.
+\bibitem{liu2017novel}
+Chenglong Liu, Jinghong Liu, Yueming Song, and Huaidan Liang.
+\newblock A novel system for correction of relative angular displacement
+  between airborne platform and uav in target localization.
+\newblock {\em Sensors}, 17(3):510, 2017.
+
+\bibitem{dennis1974characterization}
+John~E Dennis and Jorge~J Mor{\'e}.
+\newblock A characterization of superlinear convergence and its application to
+  quasi-newton methods.
+\newblock {\em Mathematics of computation}, 28(126):549--560, 1974.
 
 \end{thebibliography}
