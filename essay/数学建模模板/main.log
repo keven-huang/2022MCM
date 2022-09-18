@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2021.2.21)  18 SEP 2022 15:28
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2021.2.21)  18 SEP 2022 19:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -887,43 +887,43 @@ Package fontspec Info: Font family 'SimHei(0)' created for font 'SimHei' with
 
 ]
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.53937pt on input line 49.
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
-
- []
-
+(Font)              scaled to size 10.53937pt on input line 51.
 
 Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+
+ []
+
 [2] [3]
 LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input lin
-e 94.
+e 96.
  (d:/texlive/2020/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2015/01/17 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.53937pt on input line 94.
+(Font)              scaled to size 10.53937pt on input line 96.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.0pt on input line 94.
+(Font)              scaled to size 7.0pt on input line 96.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 5.0pt on input line 94.
+(Font)              scaled to size 5.0pt on input line 96.
 LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
-94.
+96.
 
 (d:/texlive/2020/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
-94.
+96.
 
 (d:/texlive/2020/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
-94.
+96.
 
 (d:/texlive/2020/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
@@ -931,27 +931,27 @@ File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 File: pic1.png Graphic file (type bmp)
 <pic1.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 10.53937pt on input line 138.
+(Font)              scaled to size 10.53937pt on input line 142.
 [5]
 File: sketch2.png Graphic file (type bmp)
 <sketch2.png>
  [6]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 182.
+(Font)              scaled to size 9.03374pt on input line 186.
  [7]
-Underfull \hbox (badness 10000) in paragraph at lines 220--222
+Underfull \hbox (badness 10000) in paragraph at lines 224--226
 
  []
 
 File: two.png Graphic file (type bmp)
 <two.png>
 [8]
-Underfull \hbox (badness 1178) in paragraph at lines 243--246
+Underfull \hbox (badness 1178) in paragraph at lines 247--250
 \T1/ntxtlf/b/n/10.53937 Step1 \TU/SimSun(0)/m/n/10.53937 调 用 无 人 机 定 位 算 法  |（\
 T1/ntxtlf/m/n/10.53937 Al-go-rithm1), \TU/SimSun(0)/m/n/10.53937 对 所 有 $\OML/nt
 xmi/m/it/10.53937 j \LMS/ntxsy/m/n/10.53937 2 f\OT1/ntxtlf/m/n/10.53937 2\OML/n
@@ -972,7 +972,7 @@ File: two0.png Graphic file (type bmp)
 File: sketch1.png Graphic file (type bmp)
 <sketch1.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--331
+Underfull \hbox (badness 10000) in paragraph at lines 328--335
 
  []
 
@@ -988,43 +988,44 @@ File: four1.png Graphic file (type bmp)
  [14]
 File: four2.png Graphic file (type bmp)
 <four2.png>
+File: four3.png Graphic file (type bmp)
+<four3.png>
+ [15]
 File: check1.png Graphic file (type bmp)
 <check1.png>
- [15]
-Underfull \hbox (badness 10000) in paragraph at lines 471--472
+ [16]
+Underfull \hbox (badness 10000) in paragraph at lines 485--486
 
  []
 
 File: check2.png Graphic file (type bmp)
 <check2.png>
-[16]
+[17]
 File: check22.png Graphic file (type bmp)
 <check22.png>
- [17]
-
-LaTeX Warning: Citation `risken1996fokker' on page 18 undefined on input line 5
-05.
-
-(./main.bbl [18]) [19]
+ [18]
+File: check3.png Graphic file (type bmp)
+<check3.png>
+ [19]
+File: check4.png Graphic file (type bmp)
+<check4.png>
+ [20] (./main.bbl [21]) [22]
 LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input lin
-e 551.
- (d:/texlive/2020/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
+e 600.
+
+(d:/texlive/2020/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.53937pt on input line 551.
- [20] (./main.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+(Font)              scaled to size 10.53937pt on input line 600.
+ [23] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 13033 strings out of 476939
- 266831 string characters out of 5826132
- 652940 words of memory out of 5000000
- 32764 multiletter control sequences out of 15000+600000
+ 13063 strings out of 476939
+ 267151 string characters out of 5826132
+ 651948 words of memory out of 5000000
+ 32794 multiletter control sequences out of 15000+600000
  429345 words of font info for 79 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 101i,11n,104p,503b,338s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 101i,12n,104p,503b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (20 pages).
+Output written on main.pdf (23 pages).

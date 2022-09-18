@@ -2,8 +2,8 @@
 \ProvidesClass{my_paper}[2021/08/17 My custom CV class] 
 \LoadClass[12pt]{article}
 
-\newcommand{\lunwenbiaoti}{\fontsize{15.75pt}{0}\heiti 这里换成你的论文的标题}
-\newcommand{\zhaiyao}{\fontsize{14pt}{0}\heiti 摘要}
+\newcommand{\lunwenbiaoti}{\fontsize{15.75pt}{0}\heiti 无人机飞行的纯方位无源定位和编队调整}
+\newcommand{\zhaiyao}{\fontsize{14pt}{0}\heiti 摘\quad 要}
 
 \RequirePackage{titlesec}
 
