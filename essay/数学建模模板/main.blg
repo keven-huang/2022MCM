@@ -3,44 +3,48 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: unsrt.bst
 Database file #1: reference.bib
-You've used 3 entries,
+Warning--I didn't find a database entry for "risken1996fokker"
+Warning--I didn't find a database entry for "rossler1979equation"
+Warning--I didn't find a database entry for "mckean1970nagumo"
+You've used 4 entries,
             1791 wiz_defined-function locations,
-            469 strings with 3815 characters,
-and the built_in function-call counts, 781 in all, are:
-= -- 81
-> -- 12
-< -- 1
-+ -- 6
-- -- 3
-* -- 50
-:= -- 118
-add.period$ -- 10
-call.type$ -- 3
-change.case$ -- 3
+            479 strings with 4565 characters,
+and the built_in function-call counts, 1020 in all, are:
+= -- 84
+> -- 62
+< -- 0
++ -- 22
+- -- 18
+* -- 89
+:= -- 178
+add.period$ -- 12
+call.type$ -- 4
+change.case$ -- 4
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 38
-empty$ -- 84
-format.name$ -- 3
-if$ -- 178
+cite$ -- 4
+duplicate$ -- 36
+empty$ -- 88
+format.name$ -- 18
+if$ -- 210
 int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 3
-newline$ -- 18
-num.names$ -- 3
-pop$ -- 8
+int.to.str$ -- 4
+missing$ -- 4
+newline$ -- 23
+num.names$ -- 4
+pop$ -- 4
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 17
+skip$ -- 13
 stack$ -- 0
-substring$ -- 74
-swap$ -- 10
-text.length$ -- 1
+substring$ -- 72
+swap$ -- 4
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 10
-width$ -- 4
-write$ -- 36
+while$ -- 11
+width$ -- 5
+write$ -- 46
+(There were 3 warnings)

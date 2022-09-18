@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex main"] 1663456245 "main.aux" "main.bbl" "main" 1663456251
+["bibtex main"] 1663459871 "main.aux" "main.bbl" "main" 1663459877
   "c:/texlive/2021/texmf-dist/bibtex/bst/base/unsrt.bst" 1623425208 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "main.aux" 1663456248 3939 8371a84725dcdb332500b1ac45c0ae40 "pdflatex"
-  "reference.bib" 1663256507 660 b47c96f34d2d28e473ba529db104801d ""
+  "main.aux" 1663459874 4080 f91c8a49f3edae93704abebdaecf0876 "pdflatex"
+  "reference.bib" 1663459758 1482 dbd52b7aec83f95d4f937a9d79eee2b8 ""
   (generated)
   "main.blg"
   "main.bbl"
-["pdflatex"] 1663456246 "c:/Users/19459/2022MCM/2022MCM/essay/数学建模模板/main.tex" "main.pdf" "main" 1663456251
-  "c:/Users/19459/2022MCM/2022MCM/essay/数学建模模板/main.tex" 1663456245 27654 b469a14c8e8499332a5579738aeceb89 ""
+["pdflatex"] 1663459872 "c:/Users/19459/2022MCM/2022MCM/essay/数学建模模板/main.tex" "main.pdf" "main" 1663459877
+  "c:/Users/19459/2022MCM/2022MCM/essay/数学建模模板/main.tex" 1663459862 27429 68b39d809ccf9c678bc1a950a8bbd16b ""
   "c:/Windows/Fonts/msyh.ttc" 1622894706 19647736 ff2e53a6131130a07589812ea5b5b0d0 ""
   "c:/Windows/Fonts/simhei.ttf" 1622557740 9753388 6abc0fcfbaa40600f9cecca3afeb3aa7 ""
   "c:/Windows/Fonts/simkai.ttf" 1622557740 11787328 76179557c160634a761c845ea111c893 ""
@@ -328,14 +328,14 @@
   "c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1623456329 5227234 8169b85b11be64e0073b5aa9f9ec0c16 ""
   "c:/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1623456396 2811063 3b17b13ec822c63042acf633e76082e1 ""
   "c:/texlive/2021/texmf.cnf" 1623456307 713 e69b156964470283e0530f5060668171 ""
-  "main.aux" 1663456248 3939 8371a84725dcdb332500b1ac45c0ae40 "pdflatex"
-  "main.bbl" 1663456245 487 127ea1bdd2f66b6fcb1b9d0a8893d6d2 "bibtex main"
+  "main.aux" 1663459874 4080 f91c8a49f3edae93704abebdaecf0876 "pdflatex"
+  "main.bbl" 1663459872 1204 b57b340de223b06cea576b8602cd9a2d "bibtex main"
   "my_paper.cls" 1663256507 823 19f72070c444d774df8079f77328d6dc ""
   "pic1.png" 1663341253 61404 75a01e753e575a2222a3492cc92b5fb2 ""
   "sketch1.png" 1663289521 237059 8bf5388cb04a2e63fe98cdf9c613b22b ""
   "sketch2.png" 1663341253 27523 c062d0f540aa77fb4cf9d081a54cb542 ""
   "sketch4.png" 1663456187 164945 203a893dc1fc93748b4be4a297e20f9b ""
   (generated)
-  "main.aux"
-  "main.pdf"
   "main.log"
+  "main.pdf"
+  "main.aux"
