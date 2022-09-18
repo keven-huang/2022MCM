@@ -1,4 +1,3 @@
-from importlib.resources import path
 import numpy as np
 from cmath import *
 import matplotlib.pyplot as plt
@@ -15,7 +14,7 @@ def angle1(b, a, c):
                     (np.sqrt(np.sum((b-a)*(b-a)))*np.sqrt(np.sum((c-a)*(c-a)))))
     return round(res, 3)
 
-
+#计算范数+处理
 def caculateV(v1, v2, kind):
     # 去除最大的计算范数
     a = np.delete(v1, np.argmax(v1))
@@ -122,11 +121,11 @@ def compare(angles, No, kind):
 # 返回相应的正确率
 def run_simulate(kind,AccRangeErr):
     Correctency = 0
-    theta = np.linspace(0,2*np.pi,8,endpoint=False)
+    theta = np.linspace(0,2*np.pi,16,endpoint=False)
     for i in range(2, 6):
         for j in range(2, 10):
             if j != i:
-                for k in range(8):
+                for k in range(16):
                     AccPoint = np.array([np.cos((j-1)*np.pi/4.5), np.sin((j-1)*np.pi/4.5)]) + \
                         AccRangeErr *np.array([np.cos(theta[k]),np.sin(theta[k])])
                     No, Angles  = init(i, j, AccPoint)
@@ -137,15 +136,29 @@ def run_simulate(kind,AccRangeErr):
                     # 计算错误
                     else:
                         continue
-    return round(float(Correctency)/224,3)
+    return round(float(Correctency)/224/2,3)
+
+
+# 入口
 
 dict = create_three_element_tuple()
-for kind in range(1,4):
-    plt.figure()
-    AccRangeErrs = [0.06,0.08,0.1,0.12,0.14,0.16,0.18,0.2]
+color = ['r','y','b']
+legends = [u"L1范数",u"L2范数",u"无穷范数"]
+kinds = [3,1,2]
+# 绘图
+for kind in kinds:
+    # 使支持中文
+    plt.rcParams['font.sans-serif'] = ['SimHei']
+    plt.rcParams['axes.unicode_minus'] = False
+    AccRangeErrs = [0.04,0.05,0.06,0.08,0.1,0.12,0.14,0.16,0.18,0.2]
+    Correctencys = []
     for AccRangeErr in AccRangeErrs:
         Correctency = run_simulate(kind,AccRangeErr)
         print('kind = {kind},AccRangErr={err},Correctency={c}'.format(kind=kind,err=AccRangeErr,c=Correctency))
-        plt.scatter(AccRangeErr,Correctency,s=20,c='r')
-    path = './err-Correntency-{kind}.png'.format(kind=kind)
-    plt.savefig(path,dpi=400)
+        Correctencys.append(Correctency)
+    plt.plot(AccRangeErrs,Correctencys,"o-",label="{kind}".format(kind=legends[kind-1]))
+
+plt.legend(loc='best')
+plt.title(u"不同范数偏差率-正确率关系图")
+path = './Err-Correntency.png'
+plt.savefig(path,dpi=400)

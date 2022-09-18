@@ -13,7 +13,7 @@ def angle1(b, a, c):
                     (np.sqrt(np.sum((b-a)*(b-a)))*np.sqrt(np.sum((c-a)*(c-a)))))
     return round(res, 3)
 
-
+#计算范数+处理
 def caculateV(v1, v2, kind):
     # 去除最大的计算范数
     a = np.delete(v1, np.argmax(v1))
@@ -25,7 +25,6 @@ def caculateV(v1, v2, kind):
         return V2(a, b)
     else:
         return V3(a, b)
-
 
 # 1-范数
 def V1(a, b):
@@ -40,7 +39,6 @@ def V2(a, b):
 # 无穷范数
 def V3(a, b):
     return np.max(np.abs(a-b))
-
 
 # 计算所有三元数个数
 def create_three_element_tuple():
@@ -70,38 +68,10 @@ def create_three_element_tuple():
             mydic[tuple(list(mylist[k, 2:]))] = [tuple(list(mylist[k, 0:2]))]
     return mydic
 
-
-# 初始化
-def init(i):
-    # 固定发射无人机编号i
-    # TransimitNo = [0, 1, i]
-    TransimitPoint = [np.array([0, 0]), np.array([1, 0]), np.array([np.cos((i-1)*np.pi/4.5), np.sin((i-1)*np.pi/4.5)])]
-    # 随机接受无人机编号并且以error误差确定其坐标
-    AccNo = random.randint(3, 9)
-    while AccNo == i:
-        AccNo = random.randint(3, 9)
-    AccPoint = np.array([np.cos((AccNo-1)*np.pi/4.5)+AccRangeErr*(2*random.random()-1),
-                        np.sin((AccNo-1)*np.pi/4.5)+AccRangeErr*(2*random.random()-1)])
-    # 计算获得的三个角度
-    Angle = np.array([angle1(TransimitPoint[0], AccPoint, TransimitPoint[1])])
-    Addarr = np.array([angle1(TransimitPoint[0], AccPoint, TransimitPoint[2]), angle1(TransimitPoint[1], AccPoint, TransimitPoint[2])])
-    Addarr = np.sort(Addarr)
-    Angle = np.append(Angle, Addarr)
-
-    # 前两者为接受无人机收到的信息，AccPoint为绘图信息
-    return AccNo, Angle, AccPoint
-
-
 def init_re(i, AccNo, AccPoint):
     # 固定发射无人机编号i
     # TransimitNo = [0, 1, i]
     TransimitPoint = [np.array([0, 0]), np.array([1, 0]), np.array([np.cos((i-1)*np.pi/4.5), np.sin((i-1)*np.pi/4.5)])]
-    # 随机接受无人机编号并且以error误差确定其坐标 -- 放弃
-    # AccNo = random.randint(3, 9)
-    # while AccNo == i:
-    #     AccNo = random.randint(3, 9)
-    # AccPoint = np.array([np.cos((AccNo-1)*np.pi/4.5)+AccRangeErr*(2*random.random()-1),
-    #                     np.sin((AccNo-1)*np.pi/4.5)+AccRangeErr*(2*random.random()-1)])
     # 计算获得的三个角度
     Angle = np.array([angle1(TransimitPoint[0], AccPoint, TransimitPoint[1])])
     Addarr = np.array([angle1(TransimitPoint[0], AccPoint, TransimitPoint[2]), angle1(TransimitPoint[1], AccPoint, TransimitPoint[2])])
@@ -138,35 +108,6 @@ def compare(angles, No, kind):
         if tuple[1] == No:
             return tuple[0]
     return -1
-
-
-# 模拟算法 
-# kind = 1 1-范数 kind = 2 2-范数 kind = 3 无穷范数
-def runSimulation(kind):
-    CorrectPoint = [np.array([0, 0])]
-    for point in range(1, 10):
-        CorrectPoint.append(np.array([np.cos((point-1)*np.pi/4.5), np.sin((point-1)*np.pi/4.5)]))
-    for i in range(2, 10):
-        for _ in range(MaxTestNum):
-            No, Angles, AccPoint = init(i)
-            Caculate = compare(Angles, No, kind)
-            # 算法推断正确
-            if Caculate == i:
-                plt.scatter(AccPoint[0], AccPoint[1], c='r')
-            # 计算错误
-            else:
-                print(No)
-                print(Caculate)
-                print(Angles)
-                print(AccPoint)
-                plt.scatter(AccPoint[0], AccPoint[1], c='b')
-            x = [point[0] for point in CorrectPoint]
-            y = [point[1] for point in CorrectPoint]
-            cArr = ['g' for _ in CorrectPoint]
-            cArr[0] = cArr[1] = cArr[i] = 'k'
-            plt.scatter(x, y, c=cArr)
-        plt.show()
-
 
 def trans(i):
     if i == 0:
@@ -223,7 +164,6 @@ def runSimulation_re(kind):
     fig.legend([p1_1,p1_2,p2,p3], [u'发射机',u'接受机正确位置',u'接收机偏移有效定位位置',u'接收机偏移出错定位位置'])
     path = './{kind}.png'.format(kind = kind)
     plt.savefig(path,dpi = 400)
-    # plt.show()
 
 dict = create_three_element_tuple()
 for kind in range(1,4):
