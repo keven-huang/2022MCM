@@ -12,6 +12,8 @@
 \usepackage{float}
 \usepackage{algorithm}
 \usepackage{algorithmic}
+\usepackage{longtable}
+\usepackage{listings}
 \newcommand{\R}{\mathbb{R}}
 \newtheorem{theorem}{Theorem}
 \newtheorem{corollary}{Corollary}[theorem]
@@ -565,42 +567,1676 @@ $$
 \newpage
 \section{附录}
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \begin{tabular}{|p{14.0cm}|}
  %指定单元格宽度， 并且水平居中。
     \hline
-    \textbf{附录1} \\ %换行 
+    \textbf{支撑材料的文件列表} \\ %换行 
     \hline
-    介绍：支撑材料的文件列表  \\ 
-    \\
-    \\
+    \begin{itemize}
+        \item question 1
+        \begin{itemize}
+            \item 2-100.png 定位准确性示意图
+            \item 3-100.png 定位准确性示意图
+            \item 4-100.png 定位准确性示意图
+            \item 5-100.png 定位准确性示意图
+            \item angle.m 求角度
+            \item coordinate.m 定位
+            \item CorrectPoint.m 求正确点坐标
+            \item example.m 示例
+            \item test.m 定位算法测试
+        \end{itemize}
+        \item question 2
+        \begin{itemize}
+            \item data 算法正确性示意图
+            \item 1.png 算法正确性示意图
+            \item 2.png 算法正确性示意图
+            \item 3.png 算法正确性示意图
+            \item err\_ correctency.py
+            \item err-Correntency-1.png 算法正确概率与标准差关系图
+            \item err-Correntency-2.png 算法正确概率与标准差关系图
+            \item err-Correntency-3.png 算法正确概率与标准差关系图
+            \item simulate.py 模拟
+        \end{itemize}
+    \end{itemize}
     \\
     \hline
     \end{tabular}
 \end{table}
+
+\newpage
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{14.0cm}|}
+    \hline
+    \textbf{支撑材料的文件列表} \\  
+    \hline
+    \begin{itemize}
+        \item question 2
+        \begin{itemize}
+            \item summary.txt 数据集
+            \item test.py 测试样例
+            \item unbounded\_ err\_ simulate.py
+        \end{itemize}
+        \item question 3
+        \begin{itemize}
+            \item CorrectPoint.m 求正确点坐标
+            \item data.xlsx 数据集
+            \item q3.m 算法模拟
+            \item q3Test.m 测试样例
+            \item test.m 定位算法测试
+            \item plot.png 轨迹图1
+            \item plot1.png 轨迹图2
+            \item plot2.png 轨迹图3
+        \end{itemize}
+        \item question 4
+        \begin{itemize}
+            \item calculate.m 参数计算
+            \item createTran.m 三角形生成
+            \item formation.m 锥形队形模拟
+            \item formation.png 锥形队形
+            \item formation\_ extra.png 超线性模型
+            \item formation\_ linear.png 线性收敛模型
+            \item test.m 测试
+            \item triangle\_ inner\_ point\_ method.m 迭代算法主体
+        \end{itemize}
+    \end{itemize}
+    \\
+    \hline
+    \end{tabular}
+\end{table}
+
+\newpage
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{14.0cm}|}
+ %指定单元格宽度， 并且水平居中。
+    \hline
+    \textbf{问题1.1：matlab求角度计算器} \\ %换行 
+    \hline
+    \end{tabular}
+\end{table}
+\begin{lstlisting}[language=Matlab]
+    function anglebac = angle(b, a, c)
+        anglebac=acos((dot((b-a),(c-a)))/(norm(b-a)*norm(a-c)));
+    end
+\end{lstlisting}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{14.0cm}|}
+ %指定单元格宽度， 并且水平居中。
+    \hline
+    \textbf{问题1.1：matlab根据t, alpha, beta, gamma定位接收机坐标} \\ %换行 
+    \hline
+    \end{tabular}
+\end{table}
+
+
+\begin{lstlisting}[language=Matlab]
+    function res = coordinate(t,alpha,beta,gamma)
+    A = zeros(4,1);x=zeros(4,1);y=zeros(4,1);
+    a = [alpha,alpha,-alpha,-alpha];
+    b = [beta,-beta,beta,-beta];
+    for i = 1:4
+        A(i) = (cos(t)/tan(b(i))-sin(t)-1/tan(a(i)))...
+        /(cos(t)+sin(t)/tan(b(i))-1);
+        y(i) = (A(i)-1/tan(a(i)))/(A(i)^2+1);
+        x(i) = A(i)*y(i);
+    end
+    O= [0,0];A= [1,0];B=[cos(t),sin(t)];
+    for i = 1:4
+       C = [x(i),y(i)];
+       if abs(angle(A,C,O)-alpha)<10^(-5)...
+       && abs(angle(B,C,O)-beta)<10^(-5)...
+       && abs(angle(A,C,B)-gamma)<10^(-5)
+          xx = x(i);yy = y(i); 
+       end
+    end    
+    res = [xx,yy];
+\end{lstlisting}
+
 
 \begin{table}[htbp]
     \centering
     \begin{tabular}{|p{14.0cm}|}
  %指定单元格宽度， 并且水平居中。
     \hline
-    \textbf{附录2} \\ %换行 
-    \hline
-    介绍：该代码是某某语言编写的，作用是什么   \\ 
-    \\
-    \\
-    \\
+    \textbf{问题1.1：matlab求解理想位置} \\ %换行 
     \hline
     \end{tabular}
 \end{table}
 
-除了支撑材料的文件列表和源程序代码外，附录中还可以包括下面内容：
-\begin{itemize}
-\item 某一问题的详细证明或求解过程；
-\item 自己在网上找到的数据；
-\item 比较大的流程图；
-\item 较繁杂的图表或计算结果
-\end{itemize}
+\begin{lstlisting}[language=Matlab]
+    function point = CorrectPoint(R,i)
+    % i >= 2 及编号为01-09
+    if i >= 2 
+        x = R*cos(2*pi/9*(i-2));
+        y = R*sin(2*pi/9*(i-2));
+        point = [x,y];
+    % i == 1 编号为0
+    else
+        point = [0,0];
+    end
+    end
+\end{lstlisting}
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{|p{14.0cm}|}
+ %指定单元格宽度， 并且水平居中。
+    \hline
+    \textbf{问题1.1：matlab定位算法测试} \\ %换行 
+    \hline
+    \end{tabular}
+\end{table}
+
+\begin{lstlisting}[language=Matlab]
+% 定位算法测试 Test of Coordinate Algorithm
+% 失效情况，夹角为0
+rng(sum(100*clock))
+
+ErrorRate = 0.2; %误差20%
+err = 10^(-5);   %容许测定误差
+TestNum = 100;   %测试100个点
+R = 1;           %基础半径定义为1
+Correct = 0;     %测试正确个数
+
+% 已知发射信号无人机
+F00 = [0 0];
+F01 = [1 0];
+
+% 发射信号无人人机编号
+for j = 2:5
+    Correct = 0;
+
+    F0j = [R*cos(pi*(j-1)/4.5) R*sin(pi*(j-1)/4.5)];
+    [F00_pT,F00_pR] = cart2pol(F00(1),F00(2));
+    [F01_pT,F01_pR] = cart2pol(F01(1),F01(2));
+    [F0j_pT,F0j_pR] = cart2pol(F0j(1),F0j(2));
+
+    TransmitPtR = [F00_pR F01_pR F0j_pR];
+    TransmitPtT = [F00_pT F01_pT F0j_pT];
+    disp(TransmitPtT);
+    polarscatter(TransmitPtT,TransmitPtR,'k','filled');
+    hold on
+    for i = 1 : TestNum
+        % 随机接受无人机极坐标
+        r = R*(1+ErrorRate*rand);
+        FlightNo = randi([1,8]);
+        while FlightNo == j-1
+            FlightNo = randi([1,8]);
+        end
+        theta = pi/4.5*FlightNo*(1+rand*ErrorRate);
+        
+
+        %计算角度
+        [FlightPointX,FlightPointY] = pol2cart(r,theta);
+        FlightPoint = [FlightPointX,FlightPointY];
+        alpha = angle(F01,FlightPoint,F00);
+        beta = angle(F0j,FlightPoint,F00);
+        gamma = angle(F01,FlightPoint,F0j);
+        t = pi*(j-1)/4.5;
+
+        % 发送无人机提供给接受无人机的角度信息
+        % alpha beta gammer 夹角 t 是F01,F00与F0j的夹角
+        ProvideAngle = [t,alpha,beta,gamma];
+
+        % 计算
+        PlaceRes = coordinate(t,alpha,beta,gamma);
+        
+        %验证
+        if abs(PlaceRes(1) - FlightPoint(1)) < err && ...
+           abs(PlaceRes(2) - FlightPoint(2)) < err
+            polarscatter(theta,r,'r','filled');
+            hold on
+            Correct = Correct + 1;
+        else
+            polarscatter(theta,r,'b','filled');
+            hold on
+        end
+    end
+    hold off
+    frame = getframe;
+    img = frame.cdata;
+    imgName = sprintf("%d-%d.png",j,Correct);
+    imwrite(img,imgName);
+end
+\end{lstlisting}
+
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{|p{14.0cm}|}
+ %指定单元格宽度， 并且水平居中。
+    \hline
+    \textbf{问题1.1：matlab测试样例} \\ %换行 
+    \hline
+    \end{tabular}
+\end{table}
+
+\begin{lstlisting}
+rand('seed',sum(100*clock));
+x1 = rand;
+x2 = rand;
+r0 = 1.05;
+t0 = 2*pi - 4.18;
+mlist = zeros(2,10);
+for j = 1:5
+    fun = @(t) r0*sin(t + t0 - 7*pi/6) - sin(5*pi/6 - t);
+    t0 = fsolve(fun, 2*pi/3);
+    r0 = 2 * sin(5*pi/6-t0);
+    disp(r0);
+    disp(t0);
+    mlist(1,j)=abs(r0-1);
+    mlist(2,j)=abs(t0-2*pi/3);
+end
+\end{lstlisting}
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{|p{14.0cm}|}
+ %指定单元格宽度， 并且水平居中。
+    \hline
+    \textbf{问题1.2：python模拟小误差定位} \\ %换行 
+    \hline
+    \end{tabular}
+\end{table}
+\begin{lstlisting}[language=Python]
+import numpy as np
+import matplotlib.pyplot as plt
+import random
+
+# 常数
+MaxTestNum = 100        # 最大测试数量
+AccRangeErr = 0.1       # 和当前位置的偏移误差
+
+
+# 夹角计算函数
+def angle1(b, a, c):
+    res = np.arccos(np.dot((b-a), (c-a)) /\
+                    (np.sqrt(np.sum((b-a)*(b-a)))*\
+                    np.sqrt(np.sum((c-a)*(c-a)))))
+    return round(res, 3)
+
+
+def caculateV(v1, v2, kind):
+    # 去除最大的计算范数
+    a = np.delete(v1, np.argmax(v1))
+    b = np.delete(v2, np.argmax(v2))
+    # 计算范数
+    if kind == 1: 
+        return V1(a, b)
+    elif kind == 2:
+        return V2(a, b)
+    else:
+        return V3(a, b)
+
+
+# 1-范数
+def V1(a, b):
+    return np.sum(np.abs(a-b))
+
+
+# 2-范数
+def V2(a, b):
+    return np.sum(np.dot(a-b, a-b))
+
+
+# 无穷范数
+def V3(a, b):
+    return np.max(np.abs(a-b))
+
+
+# 计算所有三元数个数
+def create_three_element_tuple():
+    mylist = np.zeros((56, 5))
+    k = 0
+    Ori = np.array([0, 0])
+    A = np.array([1, 0])
+    for i in range(8):
+        for j in range(8):
+            if j != i:
+                mylist[k, 0] = int(i+2)
+                mylist[k, 1] = int(j+2)
+                X1 = np.array([np.cos((i+1)*np.pi/4.5),
+                              np.sin((i+1)*np.pi/4.5)])
+                X2 = np.array([np.cos((j+1)*np.pi/4.5),
+                              np.sin((j+1)*np.pi/4.5)])
+                mylist[k, 2] = angle1(A, X2, Ori)
+                tmp = np.array([angle1(X1, X2, Ori), angle1(A, X2, X1)])
+                mylist[k, 3:] = np.sort(tmp)
+                k = k + 1
+    mydic = {}
+    for k in range(56):
+        if tuple(list(mylist[k, 2:])) in mydic.keys():
+            mydic[tuple(list(mylist[k, 2:]))].append(
+                tuple(list(mylist[k, 0:2])))
+        else:
+            mydic[tuple(list(mylist[k, 2:]))] =\
+            [tuple(list(mylist[k, 0:2]))]
+    return mydic
+
+
+# 初始化
+def init(i):
+    # 固定发射无人机编号i
+    # TransimitNo = [0, 1, i]
+    TransimitPoint = [np.array([0, 0]), np.array([1, 0]),\
+    np.array([np.cos((i-1)*np.pi/4.5), np.sin((i-1)*np.pi/4.5)])]
+    # 随机接受无人机编号并且以error误差确定其坐标
+    AccNo = random.randint(3, 9)
+    while AccNo == i:
+        AccNo = random.randint(3, 9)
+    AccPoint = np.array([np.cos((AccNo-1)*np.pi/4.5)+\
+                        AccRangeErr*(2*random.random()-1),
+                        np.sin((AccNo-1)*np.pi/4.5)+AccRangeErr*\
+                        (2*random.random()-1)])
+    # 计算获得的三个角度
+    Angle = np.array([angle1(TransimitPoint[0], AccPoint,\ 
+    TransimitPoint[1])])
+    Addarr = np.array([angle1(TransimitPoint[0], AccPoint,\ 
+    TransimitPoint[2]),\
+    angle1(TransimitPoint[1], AccPoint, TransimitPoint[2])])
+    Addarr = np.sort(Addarr)
+    Angle = np.append(Angle, Addarr)
+
+    # 前两者为接受无人机收到的信息，AccPoint为绘图信息
+    return AccNo, Angle, AccPoint
+
+
+def init_re(i, AccNo, AccPoint):
+    # 固定发射无人机编号i
+    # TransimitNo = [0, 1, i]
+    TransimitPoint = [np.array([0, 0]), np.array([1, 0]),\
+    np.array([np.cos((i-1)*np.pi/4.5), np.sin((i-1)*np.pi/4.5)])]
+    # 随机接受无人机编号并且以error误差确定其坐标 -- 放弃
+    # AccNo = random.randint(3, 9)
+    # while AccNo == i:
+    #     AccNo = random.randint(3, 9)
+    # AccPoint = np.array([np.cos((AccNo-1)*np.pi/4.5)+\
+                        AccRangeErr*(2*random.random()-1),
+    #                     np.sin((AccNo-1)*np.pi/4.5) +\
+                        AccRangeErr*(2*random.random()-1)])
+    # 计算获得的三个角度
+    Angle = np.array([angle1(TransimitPoint[0],\ 
+    AccPoint, TransimitPoint[1])])
+    Addarr = np.array([angle1(TransimitPoint[0],\ 
+    AccPoint, TransimitPoint[2]),\
+    angle1(TransimitPoint[1], AccPoint, TransimitPoint[2])])
+    Addarr = np.sort(Addarr)
+    Angle = np.append(Angle, Addarr)
+
+    # 前两者为接受无人机收到的信息，AccPoint为绘图信息
+    return AccNo, Angle, AccPoint
+
+
+# 对照三元数表推断
+def compare(angles, No, kind):
+    # 第一步比较 -> 找出8个
+    firstSelect = {}
+    min01 = 100
+    Fittest01 = 10
+    for key in dict.keys():
+        if abs(key[0] - angles[0]) < min01:
+            min01 = abs(key[0] - angles[0])
+            Fittest01 = key[0]
+    for key in dict.keys():
+        if key[0] == Fittest01:
+            firstSelect[key] = dict[key]
+    # 计算范式找出最小的
+    min = 100
+    SelectAngles = (0, 0, 0)
+    for key in firstSelect.keys():
+        res = caculateV(angles, key, kind)
+        if res < min:
+            min = res
+            SelectAngles = key
+    # 得到SelectAngles
+    for tuple in dict[SelectAngles]:
+        if tuple[1] == No:
+            return tuple[0]
+    return -1
+
+
+# 模拟算法 
+# kind = 1 1-范数 kind = 2 2-范数 kind = 3 无穷范数
+def runSimulation(kind):
+    CorrectPoint = [np.array([0, 0])]
+    for point in range(1, 10):
+        CorrectPoint.append(np.array([np.cos((point-1)*np.pi/4.5),\
+        np.sin((point-1)*np.pi/4.5)]))
+    for i in range(2, 10):
+        for _ in range(MaxTestNum):
+            No, Angles, AccPoint = init(i)
+            Caculate = compare(Angles, No, kind)
+            # 算法推断正确
+            if Caculate == i:
+                plt.scatter(AccPoint[0], AccPoint[1], c='r')
+            # 计算错误
+            else:
+                print(No)
+                print(Caculate)
+                print(Angles)
+                print(AccPoint)
+                plt.scatter(AccPoint[0], AccPoint[1], c='b')
+            x = [point[0] for point in CorrectPoint]
+            y = [point[1] for point in CorrectPoint]
+            cArr = ['g' for _ in CorrectPoint]
+            cArr[0] = cArr[1] = cArr[i] = 'k'
+            plt.scatter(x, y, c=cArr)
+        plt.show()
+
+
+def trans(i):
+    if i == 0:
+        return [0, 0]
+    if i == 1:
+        return [1, 0]
+    if i == 2:
+        return [0, 1]
+    if i == 3:
+        return [1, 1]
+
+
+# 模拟算法 -- 改版
+# kind = 1 1-范数 kind = 2 2-范数 kind = 3 无穷范数
+def runSimulation_re(kind):
+    x = np.linspace(-0.2, 0.2, 11)
+    y = np.linspace(-0.2, 0.2, 11)
+    xx, yy = np.meshgrid(x, y)
+    xx = np.reshape(xx, (len(x)**2,))
+    yy = np.reshape(yy, (len(x)**2,))
+    CorrectPoint = [np.array([0, 0])]
+    for point in range(1, 10):
+        CorrectPoint.append(np.array([np.cos((point-1)*np.pi/4.5),\ 
+        np.sin((point-1)*np.pi/4.5)]))
+
+    # 使支持中文
+    plt.rcParams['font.sans-serif'] = ['SimHei']
+    plt.rcParams['axes.unicode_minus'] = False
+    
+    # 绘制子图
+    plt.figure()
+    fig, axs = plt.subplots(2, 2 ,figsize=(12,12))
+    
+    for i in range(2, 6):
+        for j in range(2, 10):
+            if j != i:
+                AccNo = j
+                for k in range(len(xx)):
+                    AccPoint = np.array([np.cos((j-1)*np.pi/4.5),\
+                    np.sin((j-1)*np.pi/4.5)]) +\
+                     np.array([xx[k], yy[k]])
+                    No, Angles, AccPoint = init_re(i, AccNo, AccPoint)
+                    Caculate = compare(Angles, No, kind)
+                    # 算法推断正确
+                    if Caculate == i:
+                        p2 = axs[trans(i-2)[0],\
+                        trans(i-2)[1]].scatter(AccPoint[0],AccPoint[1],\
+                        c='r',s = 10)
+                    # 计算错误
+                    else:                        
+                        p3 = axs[trans(i-2)[0],\
+                         trans(i-2)[1]].scatter(AccPoint[0],\
+                        AccPoint[1], c='b',s = 10)
+        x = [point[0] for point in CorrectPoint]
+        y = [point[1] for point in CorrectPoint]
+        TranMitX = [CorrectPoint[0][0],\
+        CorrectPoint[1][0],CorrectPoint[i][0]]
+        TranMitY = [CorrectPoint[0][1],\
+        CorrectPoint[1][1],CorrectPoint[i][1]]
+        p1_2 = axs[trans(i-2)[0],\
+         trans(i-2)[1]].scatter(x, y, c='g',s = 10)
+        p1_1 = axs[trans(i-2)[0],\
+         trans(i-2)[1]].scatter(TranMitX,\ 
+        TranMitY, c='k',s = 10)
+    fig.legend([p1_1,p1_2,p2,p3],\
+    [u'发射机',u'接受机正确位置',\
+    u'接收机偏移有效定位位置',u'接收机偏移出错定位位置'])
+    path = './{kind}.png'.format(kind = kind)
+    plt.savefig(path,dpi = 400)
+    # plt.show()
+
+dict = create_three_element_tuple()
+for kind in range(1,4):
+    runSimulation_re(kind)
+
+\end{lstlisting}
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{|p{14.0cm}|}
+ %指定单元格宽度， 并且水平居中。
+    \hline
+    \textbf{问题1.2：python计算误差率和算法正确率的关系} \\ %换行 
+    \hline
+    \end{tabular}
+\end{table}
+
+\begin{lstlisting}[language=Python]
+from importlib.resources import path
+import numpy as np
+from cmath import *
+import matplotlib.pyplot as plt
+import random
+
+# 计算误差率和算法正确率的关系
+
+# 常数
+MaxTestNum = 100        # 最大测试数量
+
+# 夹角计算函数
+def angle1(b, a, c):
+    res = np.arccos(np.dot((b-a), (c-a)) /
+                    (np.sqrt(np.sum((b-a)*(b-a)))*np.sqrt(np.sum((c-a)*(c-a)))))
+    return round(res, 3)
+
+
+def caculateV(v1, v2, kind):
+    # 去除最大的计算范数
+    a = np.delete(v1, np.argmax(v1))
+    b = np.delete(v2, np.argmax(v2))
+    # 计算范数
+    if kind == 1: 
+        return V1(a, b)
+    elif kind == 2:
+        return V2(a, b)
+    else:
+        return V3(a, b)
+
+
+# 1-范数
+def V1(a, b):
+    return np.sum(np.abs(a-b))
+
+
+# 2-范数
+def V2(a, b):
+    return np.sum(np.dot(a-b, a-b))
+
+
+# 无穷范数
+def V3(a, b):
+    return np.max(np.abs(a-b))
+
+# 计算所有三元数个数
+def create_three_element_tuple():
+    mylist = np.zeros((56, 5))
+    k = 0
+    Ori = np.array([0, 0])
+    A = np.array([1, 0])
+    for i in range(8):
+        for j in range(8):
+            if j != i:
+                mylist[k, 0] = int(i+2)
+                mylist[k, 1] = int(j+2)
+                X1 = np.array([np.cos((i+1)*np.pi/4.5),
+                              np.sin((i+1)*np.pi/4.5)])
+                X2 = np.array([np.cos((j+1)*np.pi/4.5),
+                              np.sin((j+1)*np.pi/4.5)])
+                mylist[k, 2] = angle1(A, X2, Ori)
+                tmp = np.array([angle1(X1, X2, Ori), angle1(A, X2, X1)])
+                mylist[k, 3:] = np.sort(tmp)
+                k = k + 1
+    mydic = {}
+    for k in range(56):
+        if tuple(list(mylist[k, 2:])) in mydic.keys():
+            mydic[tuple(list(mylist[k, 2:]))].append(
+                tuple(list(mylist[k, 0:2])))
+        else:
+            mydic[tuple(list(mylist[k, 2:]))] = [tuple(list(mylist[k, 0:2]))]
+    return mydic
+
+def polar2cart(p):
+    z = polar(p)
+    print(z)
+    return
+
+# 初始化
+def init(i,AccNo,AccPoint):
+    # 固定发射无人机编号i
+    # TransimitNo = [0, 1, i]
+    TransimitPoint = [np.array([0, 0]), np.array([1, 0]),\
+    np.array([np.cos((i-1)*np.pi/4.5), np.sin((i-1)*np.pi/4.5)])]
+
+    # 计算获得的三个角度
+    Angle = np.array([angle1(TransimitPoint[0], AccPoint, TransimitPoint[1])])
+    Addarr = np.array([angle1(TransimitPoint[0], AccPoint, TransimitPoint[2]),\
+     angle1(TransimitPoint[1], AccPoint, TransimitPoint[2])])
+    Addarr = np.sort(Addarr)
+    Angle = np.append(Angle, Addarr)
+
+    # AccNo, Angle为接受无人机收到的信息
+    return AccNo, Angle
+
+# 对照三元数表推断
+def compare(angles, No, kind):
+    # 第一步比较 -> 找出8个
+    firstSelect = {}
+    min01 = 100
+    Fittest01 = 10
+    for key in dict.keys():
+        if abs(key[0] - angles[0]) < min01:
+            min01 = abs(key[0] - angles[0])
+            Fittest01 = key[0]
+    for key in dict.keys():
+        if key[0] == Fittest01:
+            firstSelect[key] = dict[key]
+    # 计算范式找出最小的
+    min = 100
+    SelectAngles = (0, 0, 0)
+    for key in firstSelect.keys():
+        res = caculateV(angles, key, kind)
+        if res < min:
+            min = res
+            SelectAngles = key
+    # 得到SelectAngles
+    for tuple in dict[SelectAngles]:
+        if tuple[1] == No:
+            return tuple[0]
+    return -1
+
+# polar
+# 返回相应的正确率
+def run_simulate(kind,AccRangeErr):
+    Correctency = 0
+    theta = np.linspace(0,2*np.pi,8,endpoint=False)
+    for i in range(2, 6):
+        for j in range(2, 10):
+            if j != i:
+                for k in range(8):
+                    AccPoint = np.array([np.cos((j-1)*np.pi/4.5),\
+                    np.sin((j-1)*np.pi/4.5)]) +\
+                    AccRangeErr *np.array([np.cos(theta[k]),\
+                    np.sin(theta[k])])
+                    No, Angles  = init(i, j, AccPoint)
+                    Caculate = compare(Angles, No, kind)
+                    # 算法推断正确
+                    if Caculate == i:
+                        Correctency = Correctency + 1
+                    # 计算错误
+                    else:
+                        continue
+    return round(float(Correctency)/224,3)
+
+dict = create_three_element_tuple()
+for kind in range(1,4):
+    plt.figure()
+    AccRangeErrs = [0.06,0.08,0.1,0.12,0.14,0.16,0.18,0.2]
+    for AccRangeErr in AccRangeErrs:
+        Correctency = run_simulate(kind,AccRangeErr)
+        print('kind = {kind},AccRangErr={err},\
+        Correctency={c}'.format(kind=kind,err=AccRangeErr,c=Correctency))
+        plt.scatter(AccRangeErr,Correctency,s=20,c='r')
+    path = './err-Correntency-{kind}.png'.format(kind=kind)
+    plt.savefig(path,dpi=400)
+\end{lstlisting}
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{|p{14.0cm}|}
+ %指定单元格宽度， 并且水平居中。
+    \hline
+    \textbf{问题1.2：python计算不限定误差率情况下正确率} \\ %换行 
+    \hline
+    \end{tabular}
+\end{table}
+\begin{lstlisting}[language=Python]
+from array import array
+from cmath import tan
+import numpy as np
+import matplotlib.pyplot as plt
+import random
+
+from test import angle
+
+#计算不限定误差率情况下正确率
+
+MaxTestNum = 100
+
+# 夹角计算函数
+def angle1(b, a, c):
+    res = np.arccos(np.dot((b-a), (c-a)) /
+                    (np.sqrt(np.sum((b-a)*(b-a)))*np.sqrt(np.sum((c-a)*(c-a)))))
+    return round(res, 3)
+
+def coordinate(t,alpha,beta,gamma):
+    A = np.zeros((4, 1))
+    x = np.zeros((4, 1))
+    y = np.zeros((4, 1))
+    a = [alpha,alpha,-alpha,-alpha]
+    b = [beta,-beta,beta,-beta]
+    for i in range(4):
+        A[i] = (np.cos(t)/np.tan(b[i]) - np.sin(t) - 1/np.tan(a[i]))/\
+        (np.cos(t)+np.sin(t)/np.tan(b[i])-1)
+        y[i] = (A[i] - 1/np.tan(a[i]))/(A[i]*A[i]+1)
+        x[i] = A[i]*y[i]
+    O = np.array([0,0])
+    A = np.array([1,0])
+    B = np.array([np.cos(t),np.sin(t)])
+    for i in range(4):
+        C = np.array([x[i],y[i]])
+        if abs(angle1(A,C,O)-alpha) < 1e-5 and\ 
+        abs(angle(B,C,O)-beta)<1e-5 and abs(angle(A,C,B)-gamma) < 1e-5 :
+            xx = x[i]
+            yy = y[i]
+    return np.array([xx,yy])
+
+def normal_distribution(mu1,mu2,sigma1,sigma2,row):
+    mean = [mu1,mu2]
+    cov =  [[sigma2**2,-row*sigma1*sigma2],[-row*sigma1*sigma2,sigma1**2]]
+    x,y = np.random.multivariate_normal(mean,cov,size=1)
+    return x,y
+
+# 初始化
+def init(i):
+    # 固定发射无人机编号i
+    # TransimitNo = [0, 1, i]
+    TransimitPoint = [np.array([0, 0]), np.array([1, 0]),\
+    np.array([np.cos((i-1)*np.pi/4.5), np.sin((i-1)*np.pi/4.5)])]
+    # 随机接受无人机编号并且以error误差确定其坐标
+    AccNo = random.randint(3, 9)
+    while AccNo == i:
+        AccNo = random.randint(3, 9)
+    CorrectPoint = np.array([np.cos((AccNo-1)*np.pi/4.5),np.sin((AccNo-1)*np.pi/4.5)])
+    # 正态分布
+    x,y = normal_distribution(CorrectPoint[0],CorrectPoint[1],0.1,0.1,1)
+    AccPoint = np.array([x,y])
+    # 计算获得的三个角度 顺序为 0-j-1,0-j-i,1-j-i
+    Angle = np.array([angle1(TransimitPoint[0], AccPoint, TransimitPoint[1])])
+    Addarr = np.array([angle1(TransimitPoint[0], AccPoint, TransimitPoint[2]),\
+    angle1(TransimitPoint[1],\  
+    AccPoint, TransimitPoint[2])])
+    # 前两者为接受无人机收到的信息，AccPoint为绘图信息
+    return AccNo, Angle, AccPoint , CorrectPoint
+
+def getdistance(pt1,pt2):
+    return 
+
+# 其他根据角度信息Coordinate
+def CompareWithOtherPointCoordinate(distance,Angles,Except,TruePt):
+    for i in range(2,10):
+        if i != Except[0] and i != Except[1]:
+            CoordinatePt = coordinate((i-1)*np.pi/4.5,Angles[0],Angles[1],Angles[2])
+            Comparedistance = getdistance(CoordinatePt,TruePt)
+            if Comparedistance < distance:
+                return False
+    return True
+
+def trans(i):
+    if i == 0:
+        return [0, 0]
+    if i == 1:
+        return [1, 0]
+    if i == 2:
+        return [0, 1]
+    if i == 3:
+        return [1, 1]
+
+
+def run_simulation():
+    CorrectPoint = [np.array([0, 0])]
+    for point in range(1, 10):
+        CorrectPoint.append(np.array([np.cos((point-1)*np.pi/4.5),\
+        np.sin((point-1)*np.pi/4.5)]))
+
+    # 使支持中文
+    plt.rcParams['font.sans-serif'] = ['SimHei']
+    plt.rcParams['axes.unicode_minus'] = False
+    
+    # 绘制子图
+    plt.figure()
+    fig, axs = plt.subplots(2, 2 ,figsize=(12,12))
+
+    for i in range(2, 6):
+        for _ in range(MaxTestNum):
+            No, Angles, AccPoint,CorrectPoint = init(i)
+            TrueCoordinate = coordinate((i-1)*np.pi/4.5,\
+            Angles[0],Angles[1],Angles[2])
+            distance = getdistance(TrueCoordinate,CorrectPoint)
+            reliable = CompareWithOtherPointCoordinate(distance,\
+            Angles,[i,No],CorrectPoint)
+            if reliable:
+                axs[trans(i-2)[0], trans(i-2)[1]].scatter(AccPoint[0],\
+                AccPoint[1],s=10,c='r')
+            else:
+                axs[trans(i-2)[0], trans(i-2)[1]].scatter(AccPoint[0],\
+                AccPoint[1],c='b')
+    plt.show()
+\end{lstlisting}
+
+
+
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{|p{14.0cm}|}
+ %指定单元格宽度， 并且水平居中。
+    \hline
+    \textbf{问题1.2：python测试样例} \\ %换行 
+    \hline
+    \end{tabular}
+\end{table}
+
+\begin{lstlisting}
+import numpy as np
+
+
+def angle(b, a, c):
+    return np.arccos(np.dot((b-a), (c-a))/\
+    (np.sqrt(np.sum((b-a)*(b-a)))*np.sqrt(np.sum((c-a)*(c-a)))))
+
+
+def angle1(b, a, c):
+    res = np.arccos(np.dot((b-a), (c-a)) /
+                    (np.sqrt(np.sum((b-a)*(b-a)))*np.sqrt(np.sum((c-a)*(c-a)))))
+    return round(res, 3)
+
+
+mylist = np.zeros((336, 9))
+t = 0
+Ori = np.array([0, 0])
+A = np.array([1, 0])
+for k in range(8):
+    for i in range(8):
+        for j in range(i+1,8):
+            if i != j and i != k and j != k:
+                mylist[t, 0] = int(i) + 2
+                mylist[t, 1] = int(j) + 2
+                mylist[t, 2] = int(k) + 2
+                # X3接受
+                X1 = np.array([np.cos((i+1)*np.pi/4.5),
+                              np.sin((i+1)*np.pi/4.5)])
+                X2 = np.array([np.cos((j+1)*np.pi/4.5),
+                              np.sin((j+1)*np.pi/4.5)])
+                X3 = np.array([np.cos((k+1)*np.pi/4.5),
+                              np.sin((k+1)*np.pi/4.5)])
+                addArr = np.array([angle1(Ori,X3,A)])
+                tmp = np.array([angle1(Ori,X3, X1),\ 
+                angle1(Ori,X3,X2),\
+                angle1(A,X3,X1),angle1(A,X3,X2),angle1(X1,X3,X2)])
+                tmp = np.sort(tmp)
+                addArr = np.append(addArr,tmp)
+                mylist[t, 3:] = addArr
+                t = t + 1
+mydic = {}
+for k in range(168):
+    if tuple(list(mylist[k, 3:])) in mydic.keys():
+        mydic[tuple(list(mylist[k, 3:]))].append(tuple(list(mylist[k, 0:3])))
+    else:
+        mydic[tuple(list(mylist[k, 3:]))] =\
+        [tuple(list(mylist[k, 0:3]))]
+
+\end{lstlisting}
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{|p{14.0cm}|}
+ %指定单元格宽度， 并且水平居中。
+    \hline
+    \textbf{问题1.3：matlab收敛性分析} \\ %换行 
+    \hline
+    \end{tabular}
+\end{table}
+
+\begin{lstlisting}[language=Matlab]
+% 输入input
+polars = readmatrix('data.xlsx');
+
+% r单位转化为100米,转化为弧度制
+polars(1,:) = polars(1,:)/100;
+polars(2,:) = polars(2,:)*pi/180;
+disp(polars);
+
+% 基础参数设定
+dim = 2;                % 极坐标参数个数
+flight_num = 10;        % 无人机数
+max_iter_num = 10;      % 最大可能迭代次数
+iter_num = 1;           % 迭代次数
+R = 1;                  % 周长
+error = 10^-5;          % 误差
+
+% 迭代初始化init
+flight_iter = zeros(dim,flight_num,max_iter_num);
+flight_iter(:,:,iter_num) = polars;
+
+
+% 1-4-7调整
+r0 = flight_iter(1,8,iter_num);
+t0 = 2*pi - flight_iter(2,8,iter_num);
+
+while true
+    iter_num = iter_num + 1;
+    flight_iter(:,:,iter_num) = flight_iter(:,:,iter_num - 1);
+    fun = @(t) r0*sin(t + t0 - 7*pi/6) - sin(5*pi/6 - t);
+    t0 = fsolve(fun, 2*pi/3);  
+    r0 = 2 * sin(5*pi/6-t0);   
+
+    %调整4号无人机
+    if mod(iter_num,2) == 0    
+        flight_iter(2,5,iter_num) = t0;
+        flight_iter(1,5,iter_num) = r0;
+    %调整7号无人机
+    else 
+        flight_iter(2,8,iter_num) = 2*pi - t0;
+        flight_iter(1,8,iter_num) = r0;
+        
+    end
+    %若1号无人机,4号无人机与7号无人机在误差范围内呈等边三角,则认为调整完毕
+    if abs(flight_iter(2,5,iter_num) - 2*pi/3) <...
+    error && abs(flight_iter(1,5,iter_num) - 1) < error ...
+    && abs(flight_iter(2,8,iter_num) - 4*pi/3) < error &&...
+    abs(flight_iter(1,8,iter_num) - 1) < error
+        disp("break")
+        break
+    end
+end
+
+% 其余无人机节点调整
+for flight = 2 : 10
+    % 1 - 4 - 7 无须调整
+    if flight == 2 && flight == 5 && flight == 8
+        continue
+    end
+
+    iter_num = iter_num + 1;
+    flight_iter(:,:,iter_num) = flight_iter(:,:,iter_num - 1);
+    %其余无人机节点的处理,如问题1(定位并且调整角到正确的位置)
+    ToPoint = CorrectPoint(R,flight);
+    [the,rho] = cart2pol(ToPoint(1),ToPoint(2));
+    [initx,inity] = pol2cart(flight_iter(2,flight,iter_num),...
+    flight_iter(1,flight,iter_num));
+    flight_iter(2,flight,iter_num) = the;
+    flight_iter(1,flight,iter_num) = rho;
+%     distance=@(x,y)sqrt((x(2)-x(1))^2+(y(2)-y(1))^2);
+%     ToAngle = atan((ToPoint(2) - inity)/(ToPoint(1) - initx));
+%     direct = sprintf("flight %d should direct to %d",flight,ToAngle);
+    disp(direct);
+end
+
+% 绘图
+disp(shiftdim(flight_iter(1,5,:),1));
+disp(shiftdim(flight_iter(2,5,:),1));
+for i = 1 : flight_num
+    a = shiftdim(flight_iter(2,i,:),1);
+    b = shiftdim(flight_iter(1,i,:),1);
+    polarplot(a,b,'-x','LineWidth',2);
+    hold on
+end
+legend('0','1','2','3','4','5','6','7','8','9')
+output = sprintf("总发送信号次数:%d",iter_num);
+disp(output);
+\end{lstlisting}
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{|p{14.0cm}|}
+ %指定单元格宽度， 并且水平居中。
+    \hline
+    \textbf{问题1.3：matlab算法模拟} \\ %换行 
+    \hline
+    \end{tabular}
+\end{table}
+\begin{lstlisting}
+% 输入input
+polars = readmatrix('data.xlsx');
+
+% r单位转化为100米,转化为弧度制
+polars(1,:) = polars(1,:)/100;
+polars(2,:) = polars(2,:)*pi/180;
+disp(polars);
+
+% polars 其他随机测试数据（误差率<=10%）需要注释上面所有内容
+%随机测试1
+% polars = [0    1.0000    1.0520    1.0803    1.0747    0.9679    0.9293    1.0633    1.0748    0.9030;
+%           0         0  polars = [0    1.0000    1.0103    1.0076    0.9244    1.0193    0.9639    1.0662    0.9601    1.0954;
+%           0         0    0.6901    1.2581    2.2600    2.9817    3.7909    4.5153    4.6635    5.7404];  0.6630    1.4207    1.9612    2.9508    3.6741    4.2114    5.0133    5.6777];
+% 随机测试2
+% 
+
+% 基础参数设定
+dim = 2;                % 极坐标参数个数
+flight_num = 10;        % 无人机数
+max_iter_num = 10;      % 最大可能迭代次数
+iter_num = 1;           % 迭代次数
+R = 1;                  % 周长
+error = 10^-5;          % 误差
+
+% 迭代初始化init
+flight_iter = zeros(dim,flight_num,max_iter_num);
+flight_iter(:,:,iter_num) = polars;
+
+
+% 1-4-7调整
+r0 = flight_iter(1,8,iter_num);
+t0 = 2*pi - flight_iter(2,8,iter_num);
+
+while true
+    iter_num = iter_num + 1;
+    flight_iter(:,:,iter_num) = flight_iter(:,:,iter_num - 1);
+    fun = @(t) r0*sin(t + t0 - 7*pi/6) - sin(5*pi/6 - t);
+    t0 = fsolve(fun, 2*pi/3);  
+    r0 = 2 * sin(5*pi/6-t0);   
+
+    %调整4号无人机
+    if mod(iter_num,2) == 0    
+        flight_iter(2,5,iter_num) = t0;
+        flight_iter(1,5,iter_num) = r0;
+    %调整7号无人机
+    else 
+        flight_iter(2,8,iter_num) = 2*pi - t0;
+        flight_iter(1,8,iter_num) = r0;
+        
+    end
+    %若1号无人机,4号无人机与7号无人机在误差范围内呈等边三角,则认为调整完毕
+    if abs(flight_iter(2,5,iter_num) - 2*pi/3) < error && abs(flight_iter(1,5,iter_num) - 1) < error ...
+    && abs(flight_iter(2,8,iter_num) - 4*pi/3) < error && abs(flight_iter(1,8,iter_num) - 1) < error
+        disp("break")
+        break
+    end
+end
+
+% 其余无人机节点调整
+for flight = 2 : 10
+    % 1 - 4 - 7 无须调整
+    if flight == 2 && flight == 5 && flight == 8
+        continue
+    end
+
+    iter_num = iter_num + 1;
+    flight_iter(:,:,iter_num) = flight_iter(:,:,iter_num - 1);
+    %其余无人机节点的处理,如问题1(定位并且调整角到正确的位置)
+    ToPoint = CorrectPoint(R,flight);
+    [the,rho] = cart2pol(ToPoint(1),ToPoint(2));
+    [initx,inity] = pol2cart(flight_iter(2,flight,iter_num),flight_iter(1,flight,iter_num));
+    flight_iter(2,flight,iter_num) = the;
+    flight_iter(1,flight,iter_num) = rho;
+%     distance=@(x,y)sqrt((x(2)-x(1))^2+(y(2)-y(1))^2);
+%     ToAngle = atan((ToPoint(2) - inity)/(ToPoint(1) - initx));
+%     direct = sprintf("flight %d should direct to %d",flight,ToAngle);
+end
+
+% 绘图
+disp(shiftdim(flight_iter(1,5,:),1));
+disp(shiftdim(flight_iter(2,5,:),1));
+for i = 1 : flight_num
+    a = shiftdim(flight_iter(2,i,:),1);
+    b = shiftdim(flight_iter(1,i,:),1);
+    polarplot(a,b,'-x','LineWidth',2);
+    hold on
+end
+legend('0','1','2','3','4','5','6','7','8','9')
+output = sprintf("总发送信号次数:%d",iter_num);
+disp(output);
+\end{lstlisting}
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{|p{14.0cm}|}
+ %指定单元格宽度， 并且水平居中。
+    \hline
+    \textbf{问题1.3：matlab定位算法测试} \\ %换行 
+    \hline
+    \end{tabular}
+\end{table}
+
+\begin{lstlisting}
+% 定位算法测试 Test of Coordinate Algorithm
+% 失效情况，夹角为0
+rng(sum(100*clock))
+
+ErrorRate = 0.2; %误差20%
+err = 10^(-5);   %容许测定误差
+TestNum = 100;     %测试100个点
+R = 1;           %基础半径定义为1
+Correct = 0;     %测试正确个数
+
+% 已知发射信号无人机
+F00 = [0 0];
+F01 = [1 0];
+
+% 发射信号无人人机编号
+for j = 2:5
+    Correct = 0;
+
+    F0j = [R*cos(pi*(j-1)/4.5) R*sin(pi*(j-1)/4.5)];
+    [F00_pT,F00_pR] = cart2pol(F00(1),F00(2));
+    [F01_pT,F01_pR] = cart2pol(F01(1),F01(2));
+    [F0j_pT,F0j_pR] = cart2pol(F0j(1),F0j(2));
+
+    TransmitPtR = [F00_pR F01_pR F0j_pR];
+    TransmitPtT = [F00_pT F01_pT F0j_pT];
+    disp(TransmitPtT);
+    polarscatter(TransmitPtT,TransmitPtR,'k','filled');
+    hold on
+    for i = 1 : TestNum
+        % 随机接受无人机极坐标
+        r = R*(1+ErrorRate*rand);
+        FlightNo = randi([1,8]);
+        while FlightNo == j-1
+            FlightNo = randi([1,8]);
+        end
+        theta = pi/4.5*FlightNo*(1+rand*ErrorRate);
+        polarscatter(theta,r,20,'r','filled');
+        hold on
+
+        %计算角度
+        [FlightPointX,FlightPointY] = pol2cart(r,theta);
+        FlightPoint = [FlightPointX,FlightPointY];
+        alpha = angle(F01,FlightPoint,F00);
+        beta = angle(F0j,FlightPoint,F00);
+        gamma = angle(F01,FlightPoint,F0j);
+        t = pi*(j-1)/4.5;
+
+        % 发送无人机提供给接受无人机的角度信息
+        % alpha beta gammer 夹角 t 是F01,F00与F0j的夹角
+        ProvideAngle = [t,alpha,beta,gamma];
+
+        % 计算
+        PlaceRes = coordinate(t,alpha,beta,gamma);
+        
+        %验证
+        if abs(PlaceRes(1) - FlightPoint(1)) < err && ...
+           abs(PlaceRes(2) - FlightPoint(2)) < err
+            Correct = Correct + 1;
+        end
+    end
+    hold off
+    frame = getframe;
+    img = frame.cdata;
+    imgName = sprintf("%d-%d.png",j,Correct);
+    imwrite(img,imgName);
+end
+
+\end{lstlisting}
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{|p{14.0cm}|}
+ %指定单元格宽度， 并且水平居中。
+    \hline
+    \textbf{问题1.3：matlab算法测试} \\ %换行 
+    \hline
+    \end{tabular}
+\end{table}
+
+
+
+\begin{lstlisting}
+    clear;
+    rng(sum(100*clock));
+    
+    %参数设定
+    TestNum = 2;            % 最大测试数量
+    ErrRate = 0.1;          % 偏差率
+    dim = 2;                % 极坐标参数个数
+    Flag = 0;               % 是否收敛（调整成功）
+    Correctency = 0;        % 正确性
+    flight_num = 10;        % 无人机数
+    max_iter_num = 20;      % 最大可能迭代次数
+    iter_num = 1;           % 迭代次数
+    all_iter_num = 0;       % 总迭代次数
+    R = 1;                  % 周长
+    error = 10^-5;          % 误差
+    
+    ErrRates = [0.1 0.12 0.14 0.16 0.18 0.2];       % 测试偏差率
+    iters = zeros(1,6);
+    
+    %初始数据
+    polars = zeros(2,10);   
+    polars(1,1) = 0;
+    polars(2,1) = 0;
+    polars(1,2) = 1;
+    polars(2,2) = 0;
+    
+    for rate = 1:6
+        all_iter_num = 0;
+        for i = 1:TestNum
+            iter_num = 1;      
+            Flag = 1;
+            for j = 3:10
+                polars(1,j) = 1 * (1+2*ErrRates(rate)*(rand-0.5));
+                polars(2,j) =\ 
+                (j-2)*pi/4.5*(1+2*ErrRates(rate)*(rand-0.5));
+            end
+            disp(polars)
+            % 迭代初始化init
+            flight_iter = zeros(dim,flight_num,max_iter_num);
+            flight_iter(:,:,iter_num) = polars;
+            
+            
+            % 1-4-7调整
+            r0 = flight_iter(1,8,iter_num);
+            t0 = 2*pi - flight_iter(2,8,iter_num);
+            
+            for t = 1 : max_iter_num
+                iter_num = iter_num + 1;
+                flight_iter(:,:,iter_num) =...
+                flight_iter(:,:,iter_num - 1);
+                fun = @(t) r0*sin(t + t0 - 7*pi/6) -...
+                sin(5*pi/6 - t);
+                t0 = fsolve(fun, 2*pi/3);  
+                r0 = 2 * sin(5*pi/6-t0);   
+            
+                %调整4号无人机
+                if mod(iter_num,2) == 0    
+                    flight_iter(2,5,iter_num) = t0;
+                    flight_iter(1,5,iter_num) = r0;
+                %调整7号无人机
+                else 
+                    flight_iter(2,8,iter_num) = 2*pi - t0;
+                    flight_iter(1,8,iter_num) = r0;
+                    
+                end
+                %若1号无人机,
+                %4号无人机与7号无人机在误差范围内呈
+                %等边三角,则认为调整完毕
+                if abs(flight_iter(2,5,iter_num) - 2*pi/3) <...
+                error && abs(flight_iter(1,5,iter_num) - 1) < error ...
+                && abs(flight_iter(2,8,iter_num) - 4*pi/3) <...
+                error && abs(flight_iter(1,8,iter_num) - 1) < error
+                    Flag = 1;
+                    break
+                end
+            end
+            disp(iter_num);
+            if Flag
+                all_iter_num = all_iter_num + iter_num - 1;
+                Correctency = Correctency + 1;
+            end
+        end
+        % 输出
+        avg_iter = all_iter_num/TestNum;
+        iters(rate) = avg_iter;
+        result = sprintf("平均调整次数：%d",avg_iter);
+        disp(result)
+    end
+    
+    plot(ErrRates,iters,'r-o');
+\end{lstlisting}
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{|p{14.0cm}|}
+ %指定单元格宽度， 并且水平居中。
+    \hline
+    \textbf{问题2：matlab参数计算} \\ %换行 
+    \hline
+    \end{tabular}
+\end{table}
+
+\begin{lstlisting}[language=Matlab]
+function [res, conver_rate] = caculate(A,B,C,O)
+    a1 = angle(O,A,B);
+    b1 = angle(O,A,C);
+    a2 = angle(O,B,C);
+    b2 = angle(O,B,A);
+    a3 = angle(O,C,A);
+    b3 = angle(O,C,B);
+
+    OB = O-B;
+    OC = O-C;
+    L2 = sqrt(OB(1)^2+OB(2)^2);
+    L1 = sqrt(OC(1)^2+OC(2)^2);
+    conver_rate = (cot(b3)-cot(b1))/...
+    (cot(a1)+cot(b3))*(cot(a2)-cot(a1))/(cot(a2)+cot(b1));
+    res = [a1,b1,a2,b2,a3,b3,L1,L2]; 
+end
+\end{lstlisting}
+
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{|p{14.0cm}|}
+ %指定单元格宽度， 并且水平居中。
+    \hline
+    \textbf{问题2：matlab三角形生成} \\ %换行 
+    \hline
+    \end{tabular}
+\end{table}
+
+\begin{lstlisting}[language=Matlab]
+clc;clear;clf;
+rng(sum(100*clock));
+D1 = 0.2*rand;
+d1 = 0.2*rand;
+Flag = 1;
+st = 0;
+while Flag == 1 && st<100
+    st = st+1;
+    x1 = 3*rand()-1;
+    x2 = 3*rand();
+    x3 = 3*rand();
+    y1 = 3*rand();
+    y2 = 3*rand()-1;
+    y3 = 3*rand();
+
+    tx = [x1 x2 x3 x1];
+    ty = [y1 y2 y3 y1];
+    A = [x1 y1 0]; 
+    B = [x2 y2 0]; 
+    C = [x3 y3 0]; 
+    plot(tx,ty);
+    hold on;
+    % x,y是O
+    for i = 1:32
+        x = x1 + cos(i*pi/16);
+        y = y1 + sin(i*pi/16);
+        O = [x y 0]; 
+        AB = A-B;
+        AP = A-O;
+        AC = A-C;
+        BA = B-A;
+        BP = B-O;
+        BC = B-C;
+        BABP = cross(BA,BP);
+        BPBC = cross(BP,BC);
+        ABAP = cross(AB,AP);
+        APAC = cross(AP,AC);
+        if BABP(3)*BPBC(3) > 0 &&  ABAP(3)*APAC(3) > 0
+            plot(x,y,'ro');
+            [res, conver_rate] = caculate(A,B,C,O);
+            disp(triangle_inner_point_method(res,D1,d1))
+            disp(conver_rate)
+            Flag = 0;
+            break
+        else
+            continue
+        end
+    end
+    if Flag == 1
+        hold off
+        disp("未找到");
+    end
+end
+\end{lstlisting}
+
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{|p{14.0cm}|}
+ %指定单元格宽度， 并且水平居中。
+    \hline
+    \textbf{问题2：matlab锥形队列} \\ %换行 
+    \hline
+    \end{tabular}
+\end{table}
+
+\begin{lstlisting}[language=Matlab]
+clear;
+
+% 参数
+ErrRate = 0.1;          % 偏差率
+iter_num = 1;           % 迭代次数
+max_iter_num = 15;      % 初始创建最大可能迭代次数
+error = 10^-4;          % 误差
+flight_num = 9;        % 无人机数
+
+% 理想队列
+idealform = [0 -1 -1 -1 -2 -2 -2 -2 -2;
+             0  1  0 -1  2  1  0 -1 -2];
+disp(idealform);
+
+% 构造队列
+form = zeros(2,flight_num);
+for i = 1:flight_num
+    form(1,i) = idealform(1,i) * (1 + ErrRate*2*(rand-0.5));
+    form(2,i) = idealform(2,i) * (1 + ErrRate*2*(rand-0.5));
+end
+form(1,3) = -1;          % 认为1-3正确
+disp(form);
+
+% 迭代初始化init
+flight_iter = zeros(2,flight_num,max_iter_num);
+flight_iter(:,:,iter_num) = form;
+
+F1 = form(:,1)';
+F3 = form(:,3)';
+F5 = form(:,5)';
+F9 = form(:,9)';
+
+% 1-3-5-9调整
+
+% 提供角度信息                 A B C O
+[res, conver_rate] = caculate(F1,F5,F9,F3);
+disp(conver_rate);
+
+% Debug
+j = 1;
+ress = zeros(2,max_iter_num);
+% 提取角信息
+a1 = res(1);
+b1 = res(2);
+a2 = res(3);
+b2 = res(4); 
+a3 = res(5);
+b3 = res(6);
+L1 = res(7);
+L2 = res(8);
+
+[idealT9,idealR9] = cart2pol(idealform(1,9),idealform(2,9));
+[idealT5,idealR5] = cart2pol(idealform(1,5),idealform(2,5));
+
+[realT ,realR] = cart2pol(form(1,9),form(2,9));
+
+D1 = (realR - idealR9)/idealR9;
+d1 = realT - idealT9 ;
+
+while true
+    % 调整5号无人机
+    iter_num = iter_num + 1;
+    flight_iter(:,:,iter_num) = flight_iter(:,:,iter_num - 1);
+    g1 = @(t) sin(a2)*sin(a1-t)-L1*(1+D1)*sin(b2)*sin(b3+t+d1);
+    d2 = fsolve(g1,0);
+    D2 = sin(a1-d2)/sin(b2)/L2-1;
+    F5_PR = idealR5 * (1+D2);
+    F5_PT = idealT5 + d2;
+    [F5X,F5Y] = pol2cart(F5_PT,F5_PR);
+    flight_iter(1,5,iter_num) = F5X;
+    flight_iter(2,5,iter_num) = F5Y;
+
+    % 调整9号无人机
+    iter_num = iter_num + 1;
+    flight_iter(:,:,iter_num) = flight_iter(:,:,iter_num - 1);
+    g2 = @(t) sin(a2+t+d2)*sin(a3)*L2*(1+D2)-sin(b3)*sin(b1-t);
+    d1 = fsolve(g2,0);
+    D1 = sin(b1-d1)/sin(a3)/L1-1;
+    F9_PR = idealR9 * (1+D1);
+    F9_PT = idealT9 + d1;
+    [F9X,F9Y] = pol2cart(F9_PT,F9_PR);
+    flight_iter(1,9,iter_num) = F9X;
+    flight_iter(2,9,iter_num) = F9Y;
+    j = j + 1;
+    ress(1,j) = d1;
+    ress(2,j) = D1;
+    %若1-3-5-9调整指定位置
+    if abs(F9_PR-idealR9)<error && abs(F9_PT-idealT9)<error ...
+            && abs(F5_PR-idealR5)<error && abs(F5_PT-idealT5)<error
+        disp("break")
+        break
+    end
+end
+
+% 其余节点调整
+for i = 1:9
+    iter_num = iter_num + 1;
+    flight_iter(:,:,iter_num) = flight_iter(:,:,iter_num - 1);
+    if i ~= 1 && i ~= 3 && i ~= 5 && i~= 9
+        flight_iter(1,i,iter_num) = idealform(1,i);
+        flight_iter(2,i,iter_num) = idealform(2,i);
+    end
+end
+
+% 绘图
+disp(shiftdim(flight_iter(1,5,:),1));
+disp(shiftdim(flight_iter(2,5,:),1));
+for i = 1 : flight_num
+    x = shiftdim(flight_iter(1,i,:),1);
+    y = shiftdim(flight_iter(2,i,:),1);
+    plot(x,y,'-x','LineWidth',2);
+    hold on
+end
+legend('0','1','2','3','4','5','6','7','8','9')
+\end{lstlisting}
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{|p{14.0cm}|}
+ %指定单元格宽度， 并且水平居中。
+    \hline
+    \textbf{问题2：matlab算法测试} \\ %换行 
+    \hline
+    \end{tabular}
+\end{table}
+
+\begin{lstlisting}[language=Matlab]
+clear;
+
+% 参数
+ErrRate = 0.1;          % 偏差率
+iter_num = 1;           % 迭代次数
+max_iter_num = 1;      % 初始创建最大可能迭代次数
+error = 10^-3;          % 误差
+flight_num = 4;        % 无人机数
+
+% 理想队列
+% idealform = [0 1 0 -2;
+%              0 0 1 -1];
+% liner
+idealform = [0.8408 0.0093 1.6212 2.0325;
+            1.3517 1.9073 0.3122 1.1602];
+disp(idealform);
+
+% 构造队列
+form = zeros(2,flight_num);
+for i = 1:flight_num
+    form(1,i) = idealform(1,i) * (1 + ErrRate*2*(rand-0.5));
+    form(2,i) = idealform(2,i) * (1 + ErrRate*2*(rand-0.5));
+end
+form(1,1) = idealform(1,1);          % 认为1-2正确
+form(2,1) = idealform(2,1);
+form(1,2) = idealform(1,2);          
+form(2,2) = idealform(2,2);
+disp(form);
+
+% 迭代初始化init
+flight_iter = zeros(2,flight_num,max_iter_num);
+flight_iter(:,:,iter_num) = form;
+
+F1 = form(:,1)';
+F2 = form(:,2)';
+F3 = form(:,3)';
+F4 = form(:,4)';
+% 1-3-5-9调整
+
+% 提供角度信息                 A B C O
+[res, conver_rate] = caculate(F2,F3,F4,F1);
+disp(conver_rate);
+
+% Debug
+j = 1;
+ress = zeros(2,max_iter_num);
+% 提取角信息
+a1 = res(1);
+b1 = res(2);
+a2 = res(3);
+b2 = res(4); 
+a3 = res(5);
+b3 = res(6);
+L1 = res(7);
+L2 = res(8);
+
+[idealT4,idealR4] = cart2pol(idealform(1,4),idealform(2,4));
+[idealT3,idealR3] = cart2pol(idealform(1,3),idealform(2,3));
+
+[realT ,realR] = cart2pol(form(1,4),form(2,4));
+
+D1 = (realR - idealR4)/idealR4;
+d1 = realT - idealT4 ;
+
+while true
+    % 调整3号无人机
+    iter_num = iter_num + 1;
+    flight_iter(:,:,iter_num) = flight_iter(:,:,iter_num - 1);
+    g1 = @(t) sin(a2)*sin(a1-t)-L1*(1+D1)*sin(b2)*sin(b3+t+d1);
+    d2 = fsolve(g1,0);
+    D2 = sin(a1-d2)/sin(b2)/L2-1;
+    F3_PR = idealR3 * (1+D2);
+    F3_PT = idealT3 + d2;
+    [F3X,F3Y] = pol2cart(F3_PT,F3_PR);
+    flight_iter(1,3,iter_num) = F3X;
+    flight_iter(2,3,iter_num) = F3Y;
+
+    % 调整4号无人机
+    iter_num = iter_num + 1;
+    flight_iter(:,:,iter_num) = flight_iter(:,:,iter_num - 1);
+    g2 = @(t) sin(a2+t+d2)*sin(a3)*L2*(1+D2)-sin(b3)*sin(b1-t);
+    d1 = fsolve(g2,0);
+    D1 = sin(b1-d1)/sin(a3)/L1-1;
+    F4_PR = idealR4 * (1+D1);
+    F4_PT = idealT4 + d1;
+    [F4X,F4Y] = pol2cart(F4_PT,F4_PR);
+    flight_iter(1,4,iter_num) = F4X;
+    flight_iter(2,4,iter_num) = F4Y;
+    j = j + 1;
+    ress(1,j) = d1;
+    ress(2,j) = D1;
+    %若调整指定位置
+    if abs(F4_PR-idealR4)<error &&...
+        abs(F4_PT-idealT4)<error ...
+            && abs(F3_PR-idealR3)<error &&...
+            abs(F3_PT-idealT3)<error
+        disp("break")
+        break
+    end
+end
+
+
+% 绘图
+disp(shiftdim(flight_iter(1,3,:),1));
+disp(shiftdim(flight_iter(2,3,:),1));
+for i = 1 : flight_num
+    x = shiftdim(flight_iter(1,i,:),1);
+    y = shiftdim(flight_iter(2,i,:),1);
+    plot(x,y,'-x','LineWidth',2);
+    hold on
+end
+legend('1','2','3','4')
+\end{lstlisting}
+
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{|p{14.0cm}|}
+ %指定单元格宽度， 并且水平居中。
+    \hline
+    \textbf{问题2：matlab调整算法} \\ %换行 
+    \hline
+    \end{tabular}
+\end{table}
+
+\begin{lstlisting}[language=Matlab]
+    function res = triangle_inner_point_method(list, D1, d1)
+    lenn = 10;
+    a1 = list(1);
+    b1 = list(2);
+    a2 = list(3);
+    b2 = list(4); 
+    a3 = list(5);
+    b3 = list(6);
+    L1 = list(7);
+    L2 = list(8);
+    res = zeros(2,lenn);
+    for j = 1:lenn
+        g1 = @(t) sin(a2)*sin(a1-t)-L1*(1+D1)*sin(b2)*sin(b3+t+d1);
+        d2 = fsolve(g1,0);
+        D2 = sin(a1-d2)/sin(b2)/L2-1;
+        g2 = @(t) sin(a2+t+d2)*sin(a3)*L2*(1+D2)-sin(b3)*sin(b1-t);
+        d1 = fsolve(g2,0);
+        D1 = sin(b1-d1)/sin(a3)/L1-1;
+        res(1,j) = d1;
+        res(2,j) = D1;
+    end    
+\end{lstlisting}
+\end{document}
+
 
 \end{document}
