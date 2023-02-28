@@ -1,5 +1,8 @@
-# 2022MCM
+# 2022CUMCM
 I set it to public repository after MCM result is published.
+
+## Update
+We get National Second Prize and Shanghai First Prize in 2022CUMCM.
 
 ## Topic
 Our Team choose topic B
